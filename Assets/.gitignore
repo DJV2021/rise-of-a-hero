@@ -1,0 +1,8 @@
+# Project-specific files
+ThirdParties/CorgiEngine/*
+ThirdParties/Feel/*
+Plugins/GitHub/*
+Plugins/Sirenix/*
+
+MMData.meta
+MMData/*

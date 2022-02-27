@@ -1,19 +1,13 @@
-﻿# Scenes
-
-* **StartScreen**: The first screen of the game
-  * Use **LoadScreen**
-  * Use **GameScreen**
-* **LoadScreen**: A screen shown when loading a new level
-* **GameScreen**: the game itself
+﻿# General
 
 ## Update
 
 * Change the version in Project Settings > Player
 * Change the version in the StartScreen
 
-## Play
+## Run the Game
 
-* **Test**
+* **Using Unity Remote**
   * You can install [Unity Remote 5](https://play.google.com/store/apps/details?id=com.unity3d.mobileremote&hl=en_US&gl=US) on your mobile
   * Start the app
   * Ensure that usb debugging mode is enabled
@@ -24,8 +18,13 @@
   * Go to Project Settings > Editor and select "Any Device" for Device
   * Press "play" in the editor
   * You should see the game on your mobile (in low quality)
-* **Development**
+* **Buy Building the .apk**
   * File > Build Settings
   * Select a device
   * Build and Run
   * **May be long**
+
+## Assets
+
+* [Door](https://kalponic-studio.itch.io/side-scroller-village-tileset)
+* [Pipoya](https://pipoya.itch.io/pipoya-rpg-tileset-32x32)

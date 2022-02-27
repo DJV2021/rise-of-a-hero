@@ -1,6 +1,23 @@
 ﻿# Rise of a hero
 
-...
+<br>
+<div align="center">
+
+![Unity](https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
+[![Issues opened](https://badgen.net/github/open-issues/DJV2021/rise-of-a-hero)](https://github.com/DJV2021/rise-of-a-hero/issues)
+[![Issues closed](https://badgen.net/github/closed-issues/DJV2021/rise-of-a-hero)](https://github.com/DJV2021/rise-of-a-hero/issues?q=is%3Aissue+is%3Aclosed)
+[![contributors](https://badgen.net/github/contributors/DJV2021/rise-of-a-hero)](https://github.com/DJV2021/rise-of-a-hero/graphs/contributors)
+![Version](https://img.shields.io/badge/version-0.1.0-yellow)
+[![License](https://badgen.net/github/license/DJV2021/rise-of-a-hero)](LICENSE)
+</div>
+
+<hr>
+
+* [Issues](https://github.com/DJV2021/rise-of-a-hero/issues)
+* [Current milestone](https://github.com/DJV2021/rise-of-a-hero/milestone/1)
+* [Scrum Board](https://github.com/orgs/DJV2021/projects/2)
 
 ## 📁 Setup
 

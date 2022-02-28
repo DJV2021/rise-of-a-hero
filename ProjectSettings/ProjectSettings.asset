@@ -787,6 +787,7 @@ PlayerSettings:
   vrEditorSettings: {}
   cloudServicesEnabled:
     Build: 1
+    Game Performance: 0
     Legacy Analytics: 1
     UNet: 1
     Unity Ads: 1

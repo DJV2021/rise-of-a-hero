@@ -9,9 +9,20 @@ namespace UI.Loading
 		protected override void Start()
 		{
 			// no progress bar
-			var g =new GameObject();
-			LoadingProgressBar = g.AddComponent<CanvasGroup>();
-			LoadingProgressBar.gameObject.AddComponent<Image>();
+			if (!LoadingProgressBar)
+			{
+				var g =new GameObject();
+				LoadingProgressBar = g.AddComponent<CanvasGroup>();
+				LoadingProgressBar.gameObject.AddComponent<Image>();
+			}
+			// no complete animation
+			if (!LoadingCompleteAnimation)
+			{
+				var g = new GameObject();
+				LoadingCompleteAnimation = g.AddComponent<CanvasGroup>();
+			}
+			
+			// start
 			base.Start();
 		}
 	}

@@ -807,7 +807,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &437327555
 RectTransform:
   m_ObjectHideFlags: 0
@@ -834,7 +834,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437327554}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87a286771fa86194e979f187a1691a2a, type: 3}
   m_Name: 
@@ -887,7 +887,7 @@ CanvasGroup:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437327554}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
@@ -899,7 +899,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437327554}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -1278,7 +1278,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 536854327
 --- !u!114 &721683723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2060,6 +2060,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1469652664}
     m_Modifications:
+    - target: {fileID: 114997346982102234, guid: dddb870645bdee94092fff3b5a85a34b,
+        type: 3}
+      propertyPath: Animator
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114997346982102234, guid: dddb870645bdee94092fff3b5a85a34b,
+        type: 3}
+      propertyPath: IdleOpacity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114997346982102234, guid: dddb870645bdee94092fff3b5a85a34b,
+        type: 3}
+      propertyPath: PressedOpacity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114997346982102234, guid: dddb870645bdee94092fff3b5a85a34b,
+        type: 3}
+      propertyPath: ButtonPressedFirstTime.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 448518841}
+    - target: {fileID: 114997346982102234, guid: dddb870645bdee94092fff3b5a85a34b,
+        type: 3}
+      propertyPath: ButtonPressedFirstTime.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ButtonPressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 114997346982102234, guid: dddb870645bdee94092fff3b5a85a34b,
+        type: 3}
+      propertyPath: ButtonPressedFirstTime.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MoreMountains.CorgiEngine.StartScreen, MoreMountains.CorgiEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 114998343298060866, guid: dddb870645bdee94092fff3b5a85a34b,
         type: 3}
       propertyPath: m_Color.b
@@ -4495,6 +4525,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929739621}
   m_CullTransparentMesh: 0
+--- !u!1 &1947741630 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1875116143031536, guid: dddb870645bdee94092fff3b5a85a34b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1242092232}
+  m_PrefabAsset: {fileID: 0}
+--- !u!225 &1947741635
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947741630}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1997257053
 GameObject:
   m_ObjectHideFlags: 0

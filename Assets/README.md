@@ -29,7 +29,7 @@
 
 ## Assets
 
-* [Door](https://kalponic-studio.itch.io/side-scroller-village-tileset)
+* [Door / House](https://kalponic-studio.itch.io/side-scroller-village-tileset)
 * [Pipoya](https://pipoya.itch.io/pipoya-rpg-tileset-32x32)
 
 ## Notes

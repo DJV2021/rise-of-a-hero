@@ -1,7 +1,12 @@
-﻿# Rise of a hero
-
-<br>
+﻿<br>
 <div align="center">
+
+<div style="width: 250px;">
+
+![](Assets/Sprites/Logos/Logo_Rise_of_a_hero.png)
+
+# Rise of a Hero
+</div>
 
 ![Unity](https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
@@ -21,14 +26,12 @@
 
 ## 📁 Setup
 
-* [Agile-Scrum Board](https://github.com/DJV2021/click-and-explore/projects/1)
-* Setup
-  * Clone project
-  * Open as Android (click on the unity version, select Android)
-  * Purchase, download, and install [Corgi Engine](https://assetstore.unity.com/packages/templates/systems/corgi-engine-2d-2-5d-platformer-26617) in Assets/ThirdParties
-  * Purchase, download, and install [Feel](https://assetstore.unity.com/packages/tools/particles-effects/feel-183370) in Assets/ThirdParties
-  * Get, and install [Odin](https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041) in Assets/Plugins 
-  * Download [GitHub for Unity](https://unity.github.com/) and drop it in Assets/Plugins 
+* Clone project
+* Open as Android (click on the unity version, select Android)
+* Purchase, download, and install [Corgi Engine](https://assetstore.unity.com/packages/templates/systems/corgi-engine-2d-2-5d-platformer-26617) in Assets/ThirdParties
+* Purchase, download, and install [Feel](https://assetstore.unity.com/packages/tools/particles-effects/feel-183370) in Assets/ThirdParties
+* Get, and install [Odin](https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041) in Assets/Plugins 
+* Download [GitHub for Unity](https://unity.github.com/) and drop it in Assets/Plugins 
 
 ## 📃 License
 

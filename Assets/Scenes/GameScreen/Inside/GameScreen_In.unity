@@ -5819,12 +5819,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6520180327563844119, guid: 862e18105e5fa284fa196117bf9f0551,
+        type: 3}
+      propertyPath: m_Name
+      value: ButtonSettings
+      objectReference: {fileID: 0}
     - target: {fileID: 6521043587057703199, guid: 862e18105e5fa284fa196117bf9f0551,
         type: 3}
       propertyPath: m_Name
       value: UICamera
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6624579616843476517, guid: 862e18105e5fa284fa196117bf9f0551,
+        type: 3}
+      propertyPath: ButtonPressedFirstTime.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6624579616843476517, guid: 862e18105e5fa284fa196117bf9f0551,
+        type: 3}
+      propertyPath: ButtonPressedFirstTime.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Open
+      objectReference: {fileID: 0}
+    - target: {fileID: 6624579616843476517, guid: 862e18105e5fa284fa196117bf9f0551,
+        type: 3}
+      propertyPath: ButtonPressedFirstTime.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MoreMountains.MMInterface.MMPopup, MoreMountains.Interface
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6621055386777451599, guid: 862e18105e5fa284fa196117bf9f0551, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 862e18105e5fa284fa196117bf9f0551, type: 3}
 --- !u!1001 &8055836086506363891
 PrefabInstance:

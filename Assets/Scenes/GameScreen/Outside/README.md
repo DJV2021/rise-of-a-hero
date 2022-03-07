@@ -1,12 +1,3 @@
 ﻿# GameScreen (Outside)
 
-## Tasks
-
-**Scene**
-
-* [ ] Create a short map
-* [ ] Keep only one door. Replace the door that you kept with a teleport or a house. This is teleporting us to our "base" (see GameScreen_In)
-
-## Notes
-
-* Check the sample scenes
+* Check the demo scenes in the Corgi Engine

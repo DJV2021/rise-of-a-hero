@@ -4028,8 +4028,8 @@ GameObject:
   - component: {fileID: 6518315983288630835}
   - component: {fileID: 6499513034736487985}
   - component: {fileID: 6612268151777478943}
-  - component: {fileID: 6624122449358719527}
   - component: {fileID: 6624518302595666095}
+  - component: {fileID: 5602900009590104900}
   m_Layer: 0
   m_Name: UICamera
   m_TagString: Untagged
@@ -4104,32 +4104,6 @@ Behaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6521043587057703199}
   m_Enabled: 1
---- !u!114 &6624122449358719527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6521043587057703199}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d64723688ce860840bebf5facbf67709, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HUD: {fileID: 6520333430863367425}
-  HealthBars:
-  - {fileID: 6624048062394518619}
-  JetPackBars:
-  - {fileID: 6624215404683076169}
-  AmmoDisplays: []
-  PauseScreen: {fileID: 6520329770054009767}
-  TimeSplash: {fileID: 6519300214045645953}
-  Buttons: {fileID: 6437961187204227659}
-  Arrows: {fileID: 6441640674759884223}
-  Joystick: {fileID: 6439019755521461153}
-  PointsText: {fileID: 0}
-  LevelText: {fileID: 0}
-  PointsPattern: 000000
 --- !u!114 &6624518302595666095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4152,6 +4126,32 @@ MonoBehaviour:
   DelayedButtonPresses: 0
   SmoothMovement: 1
   Threshold: {x: 0.1, y: 0.4}
+--- !u!114 &5602900009590104900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6521043587057703199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0c21c4771594513b43ae057d427f71b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUD: {fileID: 6520333430863367425}
+  HealthBars:
+  - {fileID: 6624048062394518619}
+  JetPackBars:
+  - {fileID: 6624215404683076169}
+  AmmoDisplays: []
+  PauseScreen: {fileID: 6520329770054009767}
+  TimeSplash: {fileID: 6519300214045645953}
+  Buttons: {fileID: 6437961187204227659}
+  Arrows: {fileID: 6441640674759884223}
+  Joystick: {fileID: 6439019755521461153}
+  PointsText: {fileID: 0}
+  LevelText: {fileID: 0}
+  PointsPattern: 000000
 --- !u!1 &6521047190019174939
 GameObject:
   m_ObjectHideFlags: 0

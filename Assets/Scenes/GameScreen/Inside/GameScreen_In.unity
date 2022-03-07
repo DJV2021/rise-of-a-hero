@@ -243,8 +243,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1276290180}
   - {fileID: 376888084}
+  - {fileID: 1276290180}
   m_Father: {fileID: 847820620}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -366,7 +366,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 363837125}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &376888085
 MonoBehaviour:
@@ -5061,6 +5061,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gate
       objectReference: {fileID: 0}
+    - target: {fileID: 5887625088577819248, guid: 32c97e6719891234f8a8fcd3f3e39962,
+        type: 3}
+      propertyPath: LevelName
+      value: Fake_GameScreen
+      objectReference: {fileID: 0}
     - target: {fileID: 5887625088577897327, guid: 32c97e6719891234f8a8fcd3f3e39962,
         type: 3}
       propertyPath: m_RootOrder
@@ -5128,7 +5133,7 @@ PrefabInstance:
     - target: {fileID: 6441825419845594169, guid: 862e18105e5fa284fa196117bf9f0551,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -228.99998
+      value: -229
       objectReference: {fileID: 0}
     - target: {fileID: 6518315983288630835, guid: 862e18105e5fa284fa196117bf9f0551,
         type: 3}

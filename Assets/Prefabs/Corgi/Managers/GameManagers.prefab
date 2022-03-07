@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AutomaticallyUnparentOnAwake: 1
   TargetFrameRate: 300
-  MaximumLives: 5
+  MaximumLives: 3
   CurrentLives: 5
   ResetLivesOnGameOver: 1
   ResetPersistentCharacterOnGameOver: 1

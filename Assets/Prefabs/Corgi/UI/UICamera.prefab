@@ -2865,7 +2865,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: BACK TO LEVEL SELECTION
+  m_Text: BACK TO MAIN MENU
 --- !u!114 &6623921833679775567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3466,7 +3466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59d042072253d11428147ba0d074fa39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelName: LevelSelection
+  LevelName: StartScreen
   Fade: 1
   Save: 0
 --- !u!114 &6624075130009290407
@@ -3787,7 +3787,7 @@ GameObject:
   - component: {fileID: 6568509512117665733}
   - component: {fileID: 6624131250220406995}
   m_Layer: 5
-  m_Name: ButtonLevelSelection
+  m_Name: ButtonMainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

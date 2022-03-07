@@ -313,7 +313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 240631094}
   m_Layer: 0
-  m_Name: ------------Managers------------
+  m_Name: '------------Managers------------'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -669,7 +669,7 @@ GameObject:
   m_Component:
   - component: {fileID: 570350940}
   m_Layer: 0
-  m_Name: ------------UI------------
+  m_Name: '------------UI------------'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2783,7 +2783,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1370558639}
   m_Layer: 0
-  m_Name: ------------Level------------
+  m_Name: '------------Level------------'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5990,6 +5990,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6520180327563844119, guid: 862e18105e5fa284fa196117bf9f0551,
+        type: 3}
+      propertyPath: m_Name
+      value: ButtonSettings
+      objectReference: {fileID: 0}
     - target: {fileID: 6519300214045645953, guid: 862e18105e5fa284fa196117bf9f0551,
         type: 3}
       propertyPath: m_IsActive
@@ -6015,7 +6020,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: UICamera
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6624579616843476517, guid: 862e18105e5fa284fa196117bf9f0551,
+        type: 3}
+      propertyPath: ButtonPressedFirstTime.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6624579616843476517, guid: 862e18105e5fa284fa196117bf9f0551,
+        type: 3}
+      propertyPath: ButtonPressedFirstTime.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Open
+      objectReference: {fileID: 0}
+    - target: {fileID: 6624579616843476517, guid: 862e18105e5fa284fa196117bf9f0551,
+        type: 3}
+      propertyPath: ButtonPressedFirstTime.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MoreMountains.MMInterface.MMPopup, MoreMountains.Interface
+      objectReference: {fileID: 0}
+    m_RemovedComponents: [{fileID: 6621055386777451599, guid: 862e18105e5fa284fa196117bf9f0551,
+        type: 3}]
   m_SourcePrefab: {fileID: 100100000, guid: 862e18105e5fa284fa196117bf9f0551, type: 3}
 --- !u!224 &6519707708707466752 stripped
 RectTransform:

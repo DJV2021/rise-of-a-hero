@@ -5027,6 +5027,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Regular Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 4800574778028142401, guid: ffd4560b1bcce8c41be0de568ddf45c7,
+        type: 3}
+      propertyPath: m_HDR
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4800574778028142401, guid: ffd4560b1bcce8c41be0de568ddf45c7,
+        type: 3}
+      propertyPath: m_RenderingPath
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4800574778028142401, guid: ffd4560b1bcce8c41be0de568ddf45c7,
+        type: 3}
+      propertyPath: orthographic size
+      value: 2.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffd4560b1bcce8c41be0de568ddf45c7, type: 3}
 --- !u!1001 &5887625087570388971

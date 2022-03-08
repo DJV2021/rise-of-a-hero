@@ -48,11 +48,11 @@ MonoBehaviour:
   AutomaticallyUnparentOnAwake: 1
   TargetFrameRate: 300
   MaximumLives: 3
-  CurrentLives: 5
+  CurrentLives: 3
   ResetLivesOnGameOver: 1
   ResetPersistentCharacterOnGameOver: 1
   ResetStoredCharacterOnGameOver: 1
-  GameOverScene: RetroAdventureGameOver
+  GameOverScene: GameOver
 --- !u!114 &57519127960358006
 MonoBehaviour:
   m_ObjectHideFlags: 0

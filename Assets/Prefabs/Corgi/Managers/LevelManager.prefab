@@ -83,7 +83,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  RespawnDelay: 2
+  RespawnDelay: 0
   BoundsMode: 1
   LevelBounds:
     m_Center: {x: -78, y: -10, z: 0}

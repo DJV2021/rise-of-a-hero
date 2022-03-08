@@ -941,11 +941,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1895556126346536545, guid: 09ba2fefdf17a834dbbcd212a75d93c0,
         type: 3}
-      propertyPath: RespawnDelay
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1895556126346536545, guid: 09ba2fefdf17a834dbbcd212a75d93c0,
-        type: 3}
       propertyPath: LevelBounds.m_Center.x
       value: -3
       objectReference: {fileID: 0}
@@ -1096,11 +1091,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -333
       objectReference: {fileID: 0}
-    - target: {fileID: 6441825419845594169, guid: 862e18105e5fa284fa196117bf9f0551,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -229
-      objectReference: {fileID: 0}
     - target: {fileID: 6518315983288630835, guid: 862e18105e5fa284fa196117bf9f0551,
         type: 3}
       propertyPath: m_RootOrder
@@ -1154,6 +1144,11 @@ PrefabInstance:
     - target: {fileID: 6518315983288630835, guid: 862e18105e5fa284fa196117bf9f0551,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6520329770054009767, guid: 862e18105e5fa284fa196117bf9f0551,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6521043587057703199, guid: 862e18105e5fa284fa196117bf9f0551,

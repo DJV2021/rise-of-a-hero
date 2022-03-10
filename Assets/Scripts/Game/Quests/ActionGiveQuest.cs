@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using MoreMountains.CorgiEngine;
+using UnityEngine;
 
 namespace Game.Quests
 {
@@ -14,7 +15,7 @@ namespace Game.Quests
             // already given
             if (quest == null) return;
             
-            ((LevelManager) LevelManager.Instance).SetQuest(quest);
+            ((RHGameManager) GameManager.Instance).SetQuest(quest);
             quest = null;
         }
     }

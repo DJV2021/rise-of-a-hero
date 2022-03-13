@@ -194,7 +194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 240631094}
   m_Layer: 0
-  m_Name: '------------Managers------------'
+  m_Name: ------------Managers------------
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -524,8 +524,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1bd31f9c89e4976ac63a7b68fae6b92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quest:
+  mainQuest:
     data: {fileID: 11400000, guid: 559c62b58ce21a048857774eca0e1da3, type: 2}
+  nextQuest:
+    data: {fileID: 11400000, guid: 57d4ee44f38cf3d488bd5b6b436687a8, type: 2}
 --- !u!1 &570350939
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,7 +538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 570350940}
   m_Layer: 0
-  m_Name: '------------UI------------'
+  m_Name: ------------UI------------
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2298,7 +2300,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1370558639}
   m_Layer: 0
-  m_Name: '------------Level------------'
+  m_Name: ------------Level------------
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

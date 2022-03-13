@@ -6,6 +6,7 @@ namespace Game.Events
     public enum QuestMethods
     {
         Started,
+        Updated,
         Completed
     }
     

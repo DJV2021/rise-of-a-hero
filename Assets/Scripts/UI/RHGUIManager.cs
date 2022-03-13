@@ -23,11 +23,11 @@ namespace UI
             RefreshQuest();
         }
 
-        public void RefreshQuest()
+        private void RefreshQuest()
         {
             if (currentQuestLabel == null) return;
             var quest = ((RHGameManager)GameManager.Current)?.CurrentQuest;
-            currentQuestLabel.text = quest != null ? quest.Data.GetDisplayName() : "";
+            currentQuestLabel.text = quest != null ? quest.GetDisplayName() : "";
             var reward = quest?.Data.Reward();
             currentQuestRewardLabel.text = reward != null ? reward.GetDisplayName() : "";
         }
@@ -46,6 +46,7 @@ namespace UI
 
         public void OnMMEvent(QuestEvent eventType)
         {
+            // todo: should use event right?
             RefreshQuest();
             
             Debug.Log(eventType);

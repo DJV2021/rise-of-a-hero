@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 96a87394cb764e12b84bace6117e72f3, type: 3}
-  m_Name: KillOneMonster
+  m_Name: FarmMonsters
   m_EditorClassIdentifier: 
-  displayName: Kill one monster
-  minInclusive: 1
-  maxInclusive: 1
-  reward: {fileID: 11400000, guid: 264e76ac82b49164fb28ed62dad9729b, type: 2}
+  displayName: Farm Monsters
+  minInclusive: 5
+  maxInclusive: 15
+  reward: {fileID: 0}

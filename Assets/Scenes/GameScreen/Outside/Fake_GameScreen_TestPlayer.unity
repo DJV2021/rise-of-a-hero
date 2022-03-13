@@ -716,7 +716,7 @@ PrefabInstance:
     - target: {fileID: 224775062160533262, guid: 96bc7b13f7426664e83ab2c20b22e6c3,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -7.999939
+      value: -7.999878
       objectReference: {fileID: 0}
     - target: {fileID: 224783302056840152, guid: 96bc7b13f7426664e83ab2c20b22e6c3,
         type: 3}
@@ -16130,7 +16130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitializationTime: 0
-  SoundClip: {fileID: 8300000, guid: d1eb298b2cbe503498d808cbe6718d4b, type: 3}
+  SoundClip: {fileID: 0}
   Loop: 1
 --- !u!4 &1989781076
 Transform:

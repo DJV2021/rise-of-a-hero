@@ -1,37 +1,31 @@
 fileFormatVersion: 2
-guid: 351a7e622803c9f43bc57afa0c051936
+guid: 19629adee585812409c00866dde2fa28
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1289056524943332496
-    second: Frog_Idle_0
+      213: -1868851217998146771
+    second: Frog_Walk_0
   - first:
-      213: -7617497109469342470
-    second: Frog_Idle_1
+      213: -4254228496668364221
+    second: Frog_Walk_1
   - first:
-      213: -3775426981648322447
-    second: Frog_Idle_2
+      213: 8136094627900831134
+    second: Frog_Walk_2
   - first:
-      213: -7958846385981659248
-    second: Frog_Idle_3
+      213: 8058600365417348931
+    second: Frog_Walk_3
   - first:
-      213: -7428281746592675213
-    second: Frog_Idle_4
+      213: -7517973019561068950
+    second: Frog_Walk_4
   - first:
-      213: 157639372840534123
-    second: Frog_Idle_5
+      213: -7756444163763988353
+    second: Frog_Walk_5
   - first:
-      213: -4046673891684370834
-    second: Frog_Idle_6
+      213: 7211663226037006648
+    second: Frog_Walk_6
   - first:
-      213: 929033404681599545
-    second: Frog_Idle_7
-  - first:
-      213: 1330325510174955031
-    second: Frog_Idle_8
-  - first:
-      213: 6827766031295606128
-    second: Frog_Idle_9
+      213: -1376650262790732661
+    second: Frog_Walk_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -133,211 +127,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Frog_Idle_0
+      name: Frog_Walk_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
-        width: 24
+        x: 1
+        y: 65
+        width: 17
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5294118, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d231a2508b18016e0800000000000000
+      internalID: -1868851217998146771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frog_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 65
+        width: 18
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6315789}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342fcbed8b1f5f4c0800000000000000
+      internalID: -4254228496668364221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frog_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 44
+        width: 17
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5294118, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e953efa05f639e070800000000000000
+      internalID: 8136094627900831134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frog_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 43
+        width: 17
         height: 21
       alignment: 9
-      pivot: {x: 0.5, y: 0.5714286}
+      pivot: {x: 0.5294118, y: 0.5714286}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07b6a579be95c1ee0800000000000000
-      internalID: -1289056524943332496
+      spriteID: 34fb8870656e5df60800000000000000
+      internalID: 8058600365417348931
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frog_Idle_1
+      name: Frog_Walk_4
       rect:
         serializedVersion: 2
-        x: 24
-        y: 96
-        width: 24
-        height: 22
+        x: 1
+        y: 23
+        width: 17
+        height: 20
       alignment: 9
-      pivot: {x: 0.5, y: 0.54545456}
+      pivot: {x: 0.5294118, y: 0.6}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af4d388fcb6394690800000000000000
-      internalID: -7617497109469342470
+      spriteID: a667712ee5bcaa790800000000000000
+      internalID: -7517973019561068950
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frog_Idle_2
+      name: Frog_Walk_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 72
-        width: 24
-        height: 22
+        x: 19
+        y: 23
+        width: 18
+        height: 19
       alignment: 9
-      pivot: {x: 0.5, y: 0.54545456}
+      pivot: {x: 0.5, y: 0.6315789}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1703d6bc92dfa9bc0800000000000000
-      internalID: -3775426981648322447
+      spriteID: f7812b2e0239b5490800000000000000
+      internalID: -7756444163763988353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frog_Idle_3
+      name: Frog_Walk_6
       rect:
         serializedVersion: 2
-        x: 24
-        y: 72
-        width: 24
-        height: 23
+        x: 1
+        y: 1
+        width: 17
+        height: 20
       alignment: 9
-      pivot: {x: 0.5, y: 0.5217391}
+      pivot: {x: 0.5294118, y: 0.6}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09769a5316f7c8190800000000000000
-      internalID: -7958846385981659248
+      spriteID: 831feabbe79f41460800000000000000
+      internalID: 7211663226037006648
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frog_Idle_4
+      name: Frog_Walk_7
       rect:
         serializedVersion: 2
-        x: 0
-        y: 48
-        width: 24
-        height: 23
+        x: 19
+        y: 1
+        width: 17
+        height: 21
       alignment: 9
-      pivot: {x: 0.5, y: 0.5217391}
+      pivot: {x: 0.5294118, y: 0.5714286}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37a43d2bb1179e890800000000000000
-      internalID: -7428281746592675213
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Frog_Idle_5
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 48
-        width: 24
-        height: 23
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5217391}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b6086c4ac2c003200800000000000000
-      internalID: 157639372840534123
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Frog_Idle_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 24
-        width: 24
-        height: 23
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5217391}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e663e44298357d7c0800000000000000
-      internalID: -4046673891684370834
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Frog_Idle_7
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 24
-        width: 24
-        height: 23
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5217391}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93ab48695f694ec00800000000000000
-      internalID: 929033404681599545
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Frog_Idle_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 24
-        height: 22
-      alignment: 9
-      pivot: {x: 0.5, y: 0.54545456}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7165e9dc004467210800000000000000
-      internalID: 1330325510174955031
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Frog_Idle_9
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 0
-        width: 24
-        height: 22
-      alignment: 9
-      pivot: {x: 0.5, y: 0.54545456}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 07d6ad8c70911ce50800000000000000
-      internalID: 6827766031295606128
+      spriteID: b84096a31e725ece0800000000000000
+      internalID: -1376650262790732661
       vertices: []
       indices: 
       edges: []

@@ -919,7 +919,7 @@ MonoBehaviour:
   UseVisualPrompt: 1
   ButtonPromptPrefab: {fileID: 114235008137252218, guid: bb1fc0f1f16f31248b9b4d80aa795609,
     type: 3}
-  ButtonPromptText: A
+  ButtonPromptText: B
   ButtonPromptColor: {r: 0.4862745, g: 0.9882353, b: 0, a: 1}
   ButtonPromptTextColor: {r: 1, g: 1, b: 1, a: 1}
   AlwaysShowPrompt: 0
@@ -1754,12 +1754,6 @@ PrefabInstance:
       propertyPath: PlayerPrefabs.Array.size
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1895556126346536545, guid: 09ba2fefdf17a834dbbcd212a75d93c0,
-        type: 3}
-      propertyPath: PlayerPrefabs.Array.data[0]
-      value: 
-      objectReference: {fileID: 114473069959786316, guid: c029eb05956a8c64b9c7130e36520100,
-        type: 3}
     - target: {fileID: 4142910943716067696, guid: 09ba2fefdf17a834dbbcd212a75d93c0,
         type: 3}
       propertyPath: m_Name
@@ -2031,7 +2025,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1359594646
 PrefabInstance:
@@ -2043,7 +2037,7 @@ PrefabInstance:
     - target: {fileID: 6518315983288630835, guid: 862e18105e5fa284fa196117bf9f0551,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6518315983288630835, guid: 862e18105e5fa284fa196117bf9f0551,
         type: 3}
@@ -111244,11 +111238,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Swordsmaster
-      objectReference: {fileID: 0}
-    - target: {fileID: 8009729818083512191, guid: 0240d8cca8773bf4b99dc478ec2a3fd4,
-        type: 3}
-      propertyPath: DamageTakenEveryTime
-      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0240d8cca8773bf4b99dc478ec2a3fd4, type: 3}

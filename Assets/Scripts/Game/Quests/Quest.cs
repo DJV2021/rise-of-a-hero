@@ -26,6 +26,11 @@ namespace Game.Quests
         {
             return _state.QuestCompleted();
         }
+
+        public override string ToString()
+        {
+            return data.ToString();
+        }
     }
 
     [Serializable]
@@ -33,6 +38,10 @@ namespace Game.Quests
     {
         public abstract string GetDisplayName();
         public abstract QuestStateHandler GetStateHandler();
+        public override string ToString()
+        {
+            return GetDisplayName();
+        }
     }
 
     public abstract class QuestStateHandler : IGameEventListener

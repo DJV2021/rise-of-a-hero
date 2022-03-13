@@ -3,7 +3,7 @@
     public interface IGameEventListener
     {
         /// <summary>
-        /// Called when the player killed an enemy.
+        /// Called when the player kill an enemy.
         /// </summary>
         void OnEnemyKilled();
     }

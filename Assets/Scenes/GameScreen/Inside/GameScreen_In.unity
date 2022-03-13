@@ -194,7 +194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 240631094}
   m_Layer: 0
-  m_Name: ------------Managers------------
+  m_Name: '------------Managers------------'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -536,7 +536,7 @@ GameObject:
   m_Component:
   - component: {fileID: 570350940}
   m_Layer: 0
-  m_Name: ------------UI------------
+  m_Name: '------------UI------------'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2298,7 +2298,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1370558639}
   m_Layer: 0
-  m_Name: ------------Level------------
+  m_Name: '------------Level------------'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4756,12 +4756,12 @@ PrefabInstance:
     - target: {fileID: 6519371744533185561, guid: 862e18105e5fa284fa196117bf9f0551,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6520091595695617979, guid: 862e18105e5fa284fa196117bf9f0551,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6520333430863367425, guid: 862e18105e5fa284fa196117bf9f0551,
         type: 3}

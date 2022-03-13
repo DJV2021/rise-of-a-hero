@@ -1,5 +1,5 @@
-﻿using MoreMountains.CorgiEngine;
-using MoreMountains.Tools;
+﻿using Game.Events;
+using MoreMountains.CorgiEngine;
 using UnityEngine;
 
 namespace Game.Enemies
@@ -9,17 +9,8 @@ namespace Game.Enemies
     {
         private void Awake()
         {
+            // every enemy tracked will trigger this event
             GetComponent<Health>().OnDeath = EnemyDeathEvent.Trigger;
-        }
-    }
-
-    public struct EnemyDeathEvent
-    {
-        private static EnemyDeathEvent _e;
-
-        public static void Trigger()
-        {
-            MMEventManager.TriggerEvent(_e);
         }
     }
 }

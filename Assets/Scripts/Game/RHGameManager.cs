@@ -3,7 +3,6 @@ using Game.Quests;
 using MoreMountains.CorgiEngine;
 using MoreMountains.Tools;
 using UI;
-using UnityEngine;
 
 namespace Game
 {
@@ -29,17 +28,19 @@ namespace Game
 
         public void OnEnemyKilled()
         {
-            Debug.Log("Enemy Killed for Quest"+CurrentQuest);
             // no quest
             if (CurrentQuest == null) return;
             // fire event
             CurrentQuest.OnEnemyKilled();
             
             // the quest is done
-            Debug.Log("Completed?"+CurrentQuest.QuestCompleted());
             if (!CurrentQuest.QuestCompleted()) return;
+            // Give reward if we got one
+            CurrentQuest.Data.Reward()?.Give(LevelManager.Instance.Players[0]);
+            
+            // clear
             CurrentQuest = null;
-            OnCurrentQuestChanged(); // empty
+            OnCurrentQuestChanged(); // clear
         }
 
         // Events

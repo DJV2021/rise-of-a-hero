@@ -856,8 +856,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1620175883
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: -1923994175756728024, guid: 6f10baca3e3e96f41ad132b8dd8b0f76,
     type: 3}
@@ -2362,6 +2362,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Swordsman_home
+      objectReference: {fileID: 0}
+    - target: {fileID: 2111934624053135104, guid: 125d3a74cb08649408527ee3c2818c71,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 125d3a74cb08649408527ee3c2818c71, type: 3}

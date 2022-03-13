@@ -4,6 +4,7 @@ A quest is made of
 
 - the data: a scriptable object
 - an handler: handle the progress of the quest
+- a reward?
 
 As a reminder, a scriptable object "can't" be modified, so we can't track the progress inside.
 

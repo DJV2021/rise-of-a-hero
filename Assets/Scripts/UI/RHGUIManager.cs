@@ -12,7 +12,8 @@ namespace UI
     {
         [Header("Quests")]
         [Tooltip("Label to put the display name of the quest")]
-        public Text currentQuestLabel;
+        [SerializeField] private Text currentQuestLabel;
+        [SerializeField] private Text currentQuestRewardLabel;
 
         protected override void Awake()
         {
@@ -25,6 +26,8 @@ namespace UI
             if (currentQuestLabel == null) return;
             var quest = ((RHGameManager)GameManager.Current).CurrentQuest;
             currentQuestLabel.text = quest != null ? quest.Data.GetDisplayName() : "";
+            var reward = quest?.Data.Reward();
+            currentQuestRewardLabel.text = reward != null ? reward.GetDisplayName() : "";
         }
     }
 }

@@ -38,7 +38,7 @@ namespace Game.Quests
 
         public override bool QuestCompleted()
         {
-            return _data.numberToKill < _numberKilled;
+            return _data.numberToKill <= _numberKilled;
         }
     }
 }

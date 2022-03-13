@@ -69,7 +69,6 @@ GameObject:
   - component: {fileID: 8142255087451268405}
   - component: {fileID: 5683150900215798491}
   - component: {fileID: 7337073853852206674}
-  - component: {fileID: 4448341472098778112}
   m_Layer: 9
   m_Name: Player_Frog
   m_TagString: Player
@@ -900,18 +899,6 @@ MonoBehaviour:
   BlockingConditionStates: 
   DanglingRaycastOrigin: {x: 0.7, y: -0.25, z: 0}
   DanglingRaycastLength: 2
---- !u!114 &4448341472098778112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1383539409296422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21c8eed038179b84daf03403fe068ff6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1693914667617252
 GameObject:
   m_ObjectHideFlags: 0
@@ -42139,15 +42126,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 045c3551ea4111b4b85af2dc7a8799e5, type: 3}
---- !u!4 &523383819370764568 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1037306133883163962, guid: 045c3551ea4111b4b85af2dc7a8799e5,
-    type: 3}
-  m_PrefabInstance: {fileID: 659265666019789858}
-  m_PrefabAsset: {fileID: 0}
 --- !u!198 &4203652506009720266 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 3706586806596884968, guid: 045c3551ea4111b4b85af2dc7a8799e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 659265666019789858}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &523383819370764568 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1037306133883163962, guid: 045c3551ea4111b4b85af2dc7a8799e5,
     type: 3}
   m_PrefabInstance: {fileID: 659265666019789858}
   m_PrefabAsset: {fileID: 0}

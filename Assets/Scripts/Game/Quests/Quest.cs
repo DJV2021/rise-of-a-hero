@@ -1,5 +1,6 @@
 ﻿using System;
 using JetBrains.Annotations;
+using MoreMountains.CorgiEngine;
 using UnityEngine;
 
 namespace Game.Quests
@@ -50,6 +51,7 @@ namespace Game.Quests
     public abstract class QuestRewardData : ScriptableObject
     {
         public abstract string GetDisplayName();
+        public abstract void Give(Character player);
         public override string ToString()
         {
             return GetDisplayName();

@@ -1,30 +1,27 @@
-﻿using Game.Enemies;
+﻿using Game.Events;
 using Game.Quests;
 using MoreMountains.CorgiEngine;
 using MoreMountains.Tools;
-using UI;
 
 namespace Game
 {
     /// <summary>
     /// Extends the default GameManger.
     /// </summary>
-    public class RHGameManager : GameManager, IGameEventListener, MMEventListener<EnemyDeathEvent>
+    public class RHGameManager : GameManager, MMEventListener<EnemyDeathEvent>
     {
         //  we can only have one quest at a time
         public void SetQuest(Quest quest)
         {
             CurrentQuest = quest;
             quest.StartQuest();
-            OnCurrentQuestChanged();
+
+            // fire event
+            QuestEvent.Trigger(CurrentQuest, QuestMethods.Started);
         }
         
         public Quest CurrentQuest { get; private set; }
-
-        private static void OnCurrentQuestChanged()
-        {
-            ((RHGUIManager)GUIManager.Instance).RefreshQuest();
-        }
+        public bool HasQuest() => CurrentQuest != null;
 
         public void OnEnemyKilled()
         {
@@ -37,10 +34,12 @@ namespace Game
             if (!CurrentQuest.QuestCompleted()) return;
             // Give reward if we got one
             CurrentQuest.Data.Reward()?.Give(LevelManager.Instance.Players[0]);
-            
+
             // clear
             CurrentQuest = null;
-            OnCurrentQuestChanged(); // clear
+
+            // fire event with null, completed :D
+            QuestEvent.Trigger(CurrentQuest, QuestMethods.Completed);
         }
 
         // Events

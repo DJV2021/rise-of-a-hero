@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Game.Quests
 {
     [Serializable]
-    public class Quest : IGameEventListener
+    public class Quest
     {
         // the data of the quest
         [SerializeField] private QuestData data;
@@ -58,9 +58,10 @@ namespace Game.Quests
         }
     }
 
-    public abstract class QuestStateHandler : IGameEventListener
+    public abstract class QuestStateHandler
     {
         public virtual void OnEnemyKilled() {}
+
         public abstract bool QuestCompleted();
     }
 }

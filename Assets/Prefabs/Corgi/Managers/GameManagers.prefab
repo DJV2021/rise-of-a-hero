@@ -65,7 +65,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa5a5ae18d78bbe4fa4fd5448234ff14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AchievementList: {fileID: 0}
+  AchievementList: {fileID: 11400000, guid: cef4e3111c9552b42b767f97c6b8ddc7, type: 2}
   PrintCurrentStatusBtn: 0
 --- !u!114 &57677788073006094
 MonoBehaviour:

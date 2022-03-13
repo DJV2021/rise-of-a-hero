@@ -30,7 +30,7 @@ MonoBehaviour:
     AchievementType: 1
     HiddenAchievement: 0
     UnlockedStatus: 0
-    Title: You are the monster now
+    Title: Now what they fear is you
     Description: Kill 10 monster
     Points: 0
     LockedImage: {fileID: 0}

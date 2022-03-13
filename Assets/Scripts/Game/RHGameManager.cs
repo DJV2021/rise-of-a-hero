@@ -1,45 +1,54 @@
-﻿using Game.Enemies;
+﻿using Game.Events;
 using Game.Quests;
 using MoreMountains.CorgiEngine;
 using MoreMountains.Tools;
-using UI;
-using UnityEngine;
 
 namespace Game
 {
     /// <summary>
     /// Extends the default GameManger.
     /// </summary>
-    public class RHGameManager : GameManager, IGameEventListener, MMEventListener<EnemyDeathEvent>
+    public class RHGameManager : GameManager, MMEventListener<EnemyDeathEvent>
     {
+        // temporary until we are keeping track of the game progress
+        private bool _hasDoneMainQuest;
+        public bool HasDoneMainQuest() => _hasDoneMainQuest;
+        
         //  we can only have one quest at a time
         public void SetQuest(Quest quest)
         {
             CurrentQuest = quest;
             quest.StartQuest();
-            OnCurrentQuestChanged();
+
+            // fire event
+            QuestEvent.Trigger(CurrentQuest, QuestMethods.Started);
+            
+            // Yeah, we only have one quest in the Main Quest
+            _hasDoneMainQuest = true;
         }
         
         public Quest CurrentQuest { get; private set; }
-
-        private static void OnCurrentQuestChanged()
-        {
-            ((RHGUIManager)GUIManager.Instance).RefreshQuest();
-        }
+        public bool HasQuest() => CurrentQuest != null;
 
         public void OnEnemyKilled()
         {
-            Debug.Log("Enemy Killed for Quest"+CurrentQuest);
             // no quest
             if (CurrentQuest == null) return;
             // fire event
             CurrentQuest.OnEnemyKilled();
             
+            QuestEvent.Trigger(CurrentQuest, QuestMethods.Updated);
+
             // the quest is done
-            Debug.Log("Completed?"+CurrentQuest.QuestCompleted());
             if (!CurrentQuest.QuestCompleted()) return;
+            // Give reward if we got one
+            CurrentQuest.Data.Reward()?.Give(LevelManager.Instance.Players[0]);
+
+            // clear
             CurrentQuest = null;
-            OnCurrentQuestChanged(); // empty
+
+            // fire event with null, completed :D
+            QuestEvent.Trigger(CurrentQuest, QuestMethods.Completed);
         }
 
         // Events

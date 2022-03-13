@@ -1,33 +1,41 @@
-﻿using System;
+﻿using UnityEngine;
 
 namespace Game.Quests
 {
-    // Info of the quest
-    [Serializable]
+    [CreateAssetMenu(menuName = "Rise of a hero/Quests/KillMonsterQuest")]
     public class KillMonsterQuest : QuestData
     {
-        public int numberToKill = 1;
+        [SerializeField] private int minInclusive = 1;
+        [SerializeField] private int maxInclusive = 1;
+        internal int NumberToKill => Random.Range(minInclusive, maxInclusive+1);
 
-        public override string GetDisplayName()
-        {
-            return $"Kill {numberToKill} monsters";
-        }
+        public QuestRewardData reward;
 
         public override QuestStateHandler GetStateHandler()
         {
             return new KillMonsterQuestHandler(this);
         }
+        
+        public override QuestRewardData Reward()
+        {
+            return reward;
+        }
     }
-    
+
     // Handler of the progress of the quest
     public class KillMonsterQuestHandler : QuestStateHandler
     {
-        private readonly KillMonsterQuest _data;
         private int _numberKilled;
+        private readonly int _numberToKill;
 
         public KillMonsterQuestHandler(KillMonsterQuest data)
         {
-            _data = data;
+            _numberToKill = data.NumberToKill;
+        }
+
+        public override string GetDisplayName()
+        {
+            return $"Kill {_numberToKill - _numberKilled} monsters";
         }
 
         public override void OnEnemyKilled()
@@ -38,7 +46,7 @@ namespace Game.Quests
 
         public override bool QuestCompleted()
         {
-            return _data.numberToKill <= _numberKilled;
+            return _numberKilled >= _numberToKill;
         }
     }
 }

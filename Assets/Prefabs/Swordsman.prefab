@@ -929,9 +929,9 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  InitialWeapon: {fileID: 114000011754806948, guid: a19f1e154a56a684d8688ccf2851af42,
+  InitialWeapon: {fileID: 5931666767801156731, guid: 1bcad869a436da8488ed9ba34ad8fc0f,
     type: 3}
-  CanPickupWeapons: 1
+  CanPickupWeapons: 0
   WeaponAttachment: {fileID: 0}
   ForceWeaponScaleResetOnEquip: 0
   ForceWeaponRotationResetOnEquip: 0
@@ -1040,7 +1040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: 
-  Radius: 4
+  Radius: 1
   DetectionOriginOffset: {x: 0, y: 0, z: 0}
   TargetLayer:
     serializedVersion: 2

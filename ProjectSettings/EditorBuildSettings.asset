@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScreen/Inside/GameScreen_In.unity
     guid: bbce29a626c16c343a751251361d6bac
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/GameScreen/Outside/GameScreen_Out.unity
+    guid: 787a18351242ea74cac84f95542b7f0a
   m_configObjects: {}

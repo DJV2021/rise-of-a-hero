@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96a87394cb764e12b84bace6117e72f3, type: 3}
-  m_Name: KillOneMonster
+  m_Script: {fileID: 11500000, guid: 1e4e28c22cb34ea48ba989310aa96fec, type: 3}
+  m_Name: GiveDash
   m_EditorClassIdentifier: 
-  displayName: Kill one monster
-  minInclusive: 1
-  maxInclusive: 1
-  reward: {fileID: 11400000, guid: 264e76ac82b49164fb28ed62dad9729b, type: 2}
+  ability: {fileID: 114339136294938960, guid: c029eb05956a8c64b9c7130e36520100, type: 3}
+  displayName: Dash

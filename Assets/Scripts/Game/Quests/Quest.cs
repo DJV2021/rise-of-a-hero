@@ -1,10 +1,11 @@
 ﻿using System;
+using MoreMountains.CorgiEngine;
 using UnityEngine;
 
 namespace Game.Quests
 {
     [Serializable]
-    public class Quest : IGameEventListener
+    public class Quest
     {
         // the data of the quest
         [SerializeField] private QuestData data;
@@ -22,6 +23,11 @@ namespace Game.Quests
             _state.OnEnemyKilled();
         }
 
+        public string GetDisplayName()
+        {
+            return _state.GetDisplayName();
+        }
+
         public bool QuestCompleted()
         {
             return _state.QuestCompleted();
@@ -29,24 +35,40 @@ namespace Game.Quests
 
         public override string ToString()
         {
-            return data.ToString();
+            return _state.ToString();
         }
     }
 
     [Serializable]
     public abstract class QuestData : ScriptableObject
     {
-        public abstract string GetDisplayName();
         public abstract QuestStateHandler GetStateHandler();
+
+        public abstract QuestRewardData Reward();
+    }
+
+    [Serializable]
+    public abstract class QuestRewardData : ScriptableObject
+    {
+        public abstract string GetDisplayName();
+        public abstract void Give(Character player);
         public override string ToString()
         {
             return GetDisplayName();
         }
     }
 
-    public abstract class QuestStateHandler : IGameEventListener
+    public abstract class QuestStateHandler
     {
+        public abstract string GetDisplayName();
+
         public virtual void OnEnemyKilled() {}
+
         public abstract bool QuestCompleted();
+
+        public override string ToString()
+        {
+            return GetDisplayName();
+        }
     }
 }

@@ -402,7 +402,7 @@ MonoBehaviour:
   UseVisualPrompt: 1
   ButtonPromptPrefab: {fileID: 114235008137252218, guid: bb1fc0f1f16f31248b9b4d80aa795609,
     type: 3}
-  ButtonPromptText: A
+  ButtonPromptText: B
   ButtonPromptColor: {r: 0.4862745, g: 0.9882353, b: 0, a: 1}
   ButtonPromptTextColor: {r: 1, g: 1, b: 1, a: 1}
   AlwaysShowPrompt: 0
@@ -4682,6 +4682,11 @@ PrefabInstance:
         type: 3}
       propertyPath: LevelName
       value: GameScreen_Out
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887625088577819248, guid: 32c97e6719891234f8a8fcd3f3e39962,
+        type: 3}
+      propertyPath: ButtonPromptText
+      value: B
       objectReference: {fileID: 0}
     - target: {fileID: 5887625088577897327, guid: 32c97e6719891234f8a8fcd3f3e39962,
         type: 3}

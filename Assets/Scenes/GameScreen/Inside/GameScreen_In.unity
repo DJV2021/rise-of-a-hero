@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 363837125}
   - component: {fileID: 363837128}
   - component: {fileID: 363837127}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Props
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -633,7 +633,7 @@ GameObject:
   m_Component:
   - component: {fileID: 847820620}
   - component: {fileID: 847820619}
-  m_Layer: 0
+  m_Layer: 22
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -716,6 +716,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 61962748409527788, guid: 7a343ffc127af4b41b1e509d55d21956,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a343ffc127af4b41b1e509d55d21956, type: 3}
 --- !u!4 &1276290180 stripped
@@ -738,7 +743,7 @@ GameObject:
   - component: {fileID: 1320739941}
   - component: {fileID: 1320739940}
   - component: {fileID: 1320739939}
-  m_Layer: 8
+  m_Layer: 22
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -753,7 +758,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320739937}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 847820620}
@@ -4446,6 +4451,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1895556126346536545, guid: 09ba2fefdf17a834dbbcd212a75d93c0,
+        type: 3}
+      propertyPath: LevelBounds.m_Center.x
+      value: -77.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 1895556126346536545, guid: 09ba2fefdf17a834dbbcd212a75d93c0,
+        type: 3}
+      propertyPath: LevelBounds.m_Center.y
+      value: -10.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1895556126346536545, guid: 09ba2fefdf17a834dbbcd212a75d93c0,
+        type: 3}
+      propertyPath: LevelBounds.m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1895556126346536545, guid: 09ba2fefdf17a834dbbcd212a75d93c0,
+        type: 3}
+      propertyPath: LevelBounds.m_Extent.x
+      value: 13.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1895556126346536545, guid: 09ba2fefdf17a834dbbcd212a75d93c0,
+        type: 3}
+      propertyPath: PlayerPrefabs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1895556126346536545, guid: 09ba2fefdf17a834dbbcd212a75d93c0,
+        type: 3}
+      propertyPath: PlayerPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 114473069959786316, guid: c029eb05956a8c64b9c7130e36520100,
+        type: 3}
     - target: {fileID: 4142910943716067696, guid: 09ba2fefdf17a834dbbcd212a75d93c0,
         type: 3}
       propertyPath: m_Name
@@ -4624,6 +4660,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gate
       objectReference: {fileID: 0}
+    - target: {fileID: 5887625088577726801, guid: 32c97e6719891234f8a8fcd3f3e39962,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5887625088577819248, guid: 32c97e6719891234f8a8fcd3f3e39962,
         type: 3}
       propertyPath: LevelName
@@ -4752,6 +4793,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519371744533185561, guid: 862e18105e5fa284fa196117bf9f0551,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6520091595695617979, guid: 862e18105e5fa284fa196117bf9f0551,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6520333430863367425, guid: 862e18105e5fa284fa196117bf9f0551,
         type: 3}

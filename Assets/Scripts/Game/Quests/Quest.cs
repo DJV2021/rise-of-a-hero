@@ -1,4 +1,5 @@
 ﻿using System;
+using JetBrains.Annotations;
 using UnityEngine;
 
 namespace Game.Quests
@@ -38,6 +39,17 @@ namespace Game.Quests
     {
         public abstract string GetDisplayName();
         public abstract QuestStateHandler GetStateHandler();
+        [CanBeNull] public abstract QuestRewardData Reward();
+        public override string ToString()
+        {
+            return GetDisplayName();
+        }
+    }
+
+    [Serializable]
+    public abstract class QuestRewardData : ScriptableObject
+    {
+        public abstract string GetDisplayName();
         public override string ToString()
         {
             return GetDisplayName();

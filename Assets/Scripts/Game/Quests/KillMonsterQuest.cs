@@ -1,12 +1,12 @@
-﻿using System;
+﻿using UnityEngine;
 
 namespace Game.Quests
 {
-    // Info of the quest
-    [Serializable]
+    [CreateAssetMenu(menuName = "Rise of a hero/Quests/KillMonsterQuest")]
     public class KillMonsterQuest : QuestData
     {
         public int numberToKill = 1;
+        public QuestRewardData reward;
 
         public override string GetDisplayName()
         {
@@ -16,6 +16,11 @@ namespace Game.Quests
         public override QuestStateHandler GetStateHandler()
         {
             return new KillMonsterQuestHandler(this);
+        }
+
+        public override QuestRewardData Reward()
+        {
+            return reward;
         }
     }
     

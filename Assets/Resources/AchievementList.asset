@@ -146,7 +146,7 @@ MonoBehaviour:
     UnlockedSound: {fileID: 0}
     ProgressTarget: 1
     ProgressCurrent: 0
-  - AchievementID: UnlockPower_1
+  - AchievementID: UnlockPower_Dash
     AchievementType: 1
     HiddenAchievement: 0
     UnlockedStatus: 0

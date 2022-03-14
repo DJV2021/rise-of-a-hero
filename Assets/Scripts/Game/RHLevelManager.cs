@@ -15,8 +15,7 @@ namespace Game
         protected override void RegularSpawnSingleCharacter()
         {
             base.RegularSpawnSingleCharacter();
-            if (RHGameManager.Instance.HasDoneMainQuest())
-                GetPlayer.GetComponent<CharacterDash>().PermitAbility(true);
+            Players[0].GetComponent<CharacterDash>().PermitAbility(RHGameManager.Instance.HasDoneMainQuest());
         }
 
         protected override void Cleanup()

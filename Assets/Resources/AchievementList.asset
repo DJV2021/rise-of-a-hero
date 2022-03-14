@@ -116,9 +116,9 @@ MonoBehaviour:
     UnlockedStatus: 0
     Title: We all gotta die at least once, right?
     Description: You lived your first death experience
-    Points: 0
-    LockedImage: {fileID: 0}
-    UnlockedImage: {fileID: 0}
+    Points: 1
+    LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    UnlockedImage: {fileID: 21300008, guid: fa6d364a5a0575245859952062aea14b, type: 3}
     UnlockedSound: {fileID: 0}
     ProgressTarget: 1
     ProgressCurrent: 0

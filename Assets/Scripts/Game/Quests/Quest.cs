@@ -1,5 +1,4 @@
 ﻿using System;
-using JetBrains.Annotations;
 using MoreMountains.CorgiEngine;
 using UnityEngine;
 
@@ -24,6 +23,11 @@ namespace Game.Quests
             _state.OnEnemyKilled();
         }
 
+        public string GetDisplayName()
+        {
+            return _state.GetDisplayName();
+        }
+
         public bool QuestCompleted()
         {
             return _state.QuestCompleted();
@@ -31,20 +35,16 @@ namespace Game.Quests
 
         public override string ToString()
         {
-            return data.ToString();
+            return _state.ToString();
         }
     }
 
     [Serializable]
     public abstract class QuestData : ScriptableObject
     {
-        public abstract string GetDisplayName();
         public abstract QuestStateHandler GetStateHandler();
-        [CanBeNull] public abstract QuestRewardData Reward();
-        public override string ToString()
-        {
-            return GetDisplayName();
-        }
+
+        public abstract QuestRewardData Reward();
     }
 
     [Serializable]
@@ -60,8 +60,15 @@ namespace Game.Quests
 
     public abstract class QuestStateHandler
     {
+        public abstract string GetDisplayName();
+
         public virtual void OnEnemyKilled() {}
 
         public abstract bool QuestCompleted();
+
+        public override string ToString()
+        {
+            return GetDisplayName();
+        }
     }
 }

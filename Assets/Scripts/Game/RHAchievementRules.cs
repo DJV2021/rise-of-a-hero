@@ -80,7 +80,7 @@ namespace Game
 			}
 			MMAchievementManager.SaveAchievements();
 		}
-		
+
 		public void OnMMEvent(PowerUpEvent eventType)
 		{
 			switch (eventType.PowerUpEventType)

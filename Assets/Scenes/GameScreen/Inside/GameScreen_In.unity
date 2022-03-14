@@ -4495,6 +4495,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 114473069959786316, guid: 6ee84b0bb4955b640b3f94640d50570d,
         type: 3}
+    - target: {fileID: 1895556126346536545, guid: 09ba2fefdf17a834dbbcd212a75d93c0,
+        type: 3}
+      propertyPath: PlayerPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 114473069959786316, guid: c029eb05956a8c64b9c7130e36520100,
+        type: 3}
     - target: {fileID: 4142910943716067696, guid: 09ba2fefdf17a834dbbcd212a75d93c0,
         type: 3}
       propertyPath: m_Name

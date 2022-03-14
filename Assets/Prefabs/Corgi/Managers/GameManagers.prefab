@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 95932348075301542}
   - component: {fileID: 8316650235704032169}
   - component: {fileID: 57519127960358006}
+  - component: {fileID: 3647365503057456200}
   - component: {fileID: 57677788073006094}
   - component: {fileID: 3503324070439977217}
   m_Layer: 0
@@ -61,12 +62,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 95932348075003526}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa5a5ae18d78bbe4fa4fd5448234ff14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   AchievementList: {fileID: 0}
+  PrintCurrentStatusBtn: 0
+--- !u!114 &3647365503057456200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95932348075003526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 608f24792e3b90545ad0feeef4883b8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AchievementList: {fileID: 11400000, guid: cef4e3111c9552b42b767f97c6b8ddc7, type: 2}
   PrintCurrentStatusBtn: 0
 --- !u!114 &57677788073006094
 MonoBehaviour:

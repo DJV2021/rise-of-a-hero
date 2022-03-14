@@ -13,6 +13,7 @@ namespace Game.Quests
         [SerializeField] private CharacterAbility ability;
         [SerializeField] private string displayName;
         [SerializeField] private PowerUpEventTypes eventType;
+        [SerializeField] private string eventName;
 
         public override string GetDisplayName()
         {
@@ -24,7 +25,7 @@ namespace Game.Quests
             // get the script on the instance of the player, do not edit the prefab
             var component = player.GetComponent(ability.GetType()) as CharacterAbility;
             if (component == null) return;
-            PowerUpEvent.Trigger(eventType);
+            PowerUpEvent.Trigger(eventType, eventName);
             component.PermitAbility(true);
         }
     }

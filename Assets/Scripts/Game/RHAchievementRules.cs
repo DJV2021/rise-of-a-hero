@@ -25,11 +25,6 @@ namespace Game
 
 		}
 
-		private void Start()
-		{
-			Awake();
-		}
-
 		public override void OnMMEvent(MMCharacterEvent characterEvent)
 		{
 			base.OnMMEvent(characterEvent);
@@ -40,7 +35,7 @@ namespace Game
 			switch (corgiEngineEvent.EventType)
 			{
 				case CorgiEngineEventTypes.GameOver:
-					AddMultiProgress("Gameover_");
+					AddMultiProgress("GameOver_");
 					break;				
 				case CorgiEngineEventTypes.PlayerDeath:
 					AddMultiProgress("Die_");
@@ -127,6 +122,7 @@ namespace Game
 
 		protected override void OnEnable()
 		{
+			Debug.Log("rhachievement onenable");
 			base.OnEnable();
 			this.MMEventStartListening<EnemyDeathEvent>();
 			this.MMEventStartListening<QuestEvent>();
@@ -136,12 +132,12 @@ namespace Game
 
 		protected override void OnDisable()
 		{
+			Debug.Log("rhachievement ondisable");
 			base.OnDisable();
 			this.MMEventStopListening<EnemyDeathEvent>();
 			this.MMEventStopListening<QuestEvent>();
 			this.MMEventStopListening<RHEvent>();
 			this.MMEventStopListening<PowerUpEvent>();
 		}
-
 	}
 }

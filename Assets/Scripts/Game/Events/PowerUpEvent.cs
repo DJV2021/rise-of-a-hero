@@ -17,10 +17,10 @@ namespace Game.Events
 
         private static PowerUpEvent _e;
 
-        public static void Trigger(PowerUpEventTypes powerUpEventTypes)
+        public static void Trigger(PowerUpEventTypes powerUpEventTypes, string name)
         {
             _e.PowerUpEventType = powerUpEventTypes;
-            _e.Name = powerUpEventTypes.ToString();
+            _e.Name = name;
             
             MMEventManager.TriggerEvent(_e);
         }

@@ -14,18 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AchievementsListID: RHAchievementsList
   Achievements:
-  - AchievementID: ==PROGRESSION-ACHIEVEMENTS==
-    AchievementType: 0
-    HiddenAchievement: 0
-    UnlockedStatus: 0
-    Title: none
-    Description: ---
-    Points: 0
-    LockedImage: {fileID: 0}
-    UnlockedImage: {fileID: 0}
-    UnlockedSound: {fileID: 0}
-    ProgressTarget: 0
-    ProgressCurrent: 0
   - AchievementID: KillMonsters_1
     AchievementType: 1
     HiddenAchievement: 0
@@ -33,8 +21,8 @@ MonoBehaviour:
     Title: You are the monster now
     Description: Kill 1 monster
     Points: 0
-    LockedImage: {fileID: 0}
-    UnlockedImage: {fileID: 0}
+    LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    UnlockedImage: {fileID: 21300000, guid: fa6d364a5a0575245859952062aea14b, type: 3}
     UnlockedSound: {fileID: 0}
     ProgressTarget: 1
     ProgressCurrent: 0
@@ -45,8 +33,8 @@ MonoBehaviour:
     Title: Now they fear you
     Description: Kill 10 monster
     Points: 0
-    LockedImage: {fileID: 0}
-    UnlockedImage: {fileID: 0}
+    LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    UnlockedImage: {fileID: 21300002, guid: fa6d364a5a0575245859952062aea14b, type: 3}
     UnlockedSound: {fileID: 0}
     ProgressTarget: 10
     ProgressCurrent: 0
@@ -57,8 +45,8 @@ MonoBehaviour:
     Title: Killing Spree
     Description: Kill 50 monster
     Points: 0
-    LockedImage: {fileID: 0}
-    UnlockedImage: {fileID: 0}
+    LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    UnlockedImage: {fileID: 21300002, guid: fa6d364a5a0575245859952062aea14b, type: 3}
     UnlockedSound: {fileID: 0}
     ProgressTarget: 50
     ProgressCurrent: 0
@@ -69,8 +57,8 @@ MonoBehaviour:
     Title: The only thing they fear is YOU
     Description: Kill 100 monster
     Points: 0
-    LockedImage: {fileID: 0}
-    UnlockedImage: {fileID: 0}
+    LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    UnlockedImage: {fileID: 21300002, guid: fa6d364a5a0575245859952062aea14b, type: 3}
     UnlockedSound: {fileID: 0}
     ProgressTarget: 100
     ProgressCurrent: 0
@@ -81,8 +69,8 @@ MonoBehaviour:
     Title: Some progress was made
     Description: Finish 1 quest
     Points: 0
-    LockedImage: {fileID: 0}
-    UnlockedImage: {fileID: 0}
+    LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    UnlockedImage: {fileID: 21300006, guid: fa6d364a5a0575245859952062aea14b, type: 3}
     UnlockedSound: {fileID: 0}
     ProgressTarget: 1
     ProgressCurrent: 0
@@ -93,8 +81,8 @@ MonoBehaviour:
     Title: Quest Slayer
     Description: Finish 5 quest
     Points: 0
-    LockedImage: {fileID: 0}
-    UnlockedImage: {fileID: 0}
+    LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    UnlockedImage: {fileID: 21300006, guid: fa6d364a5a0575245859952062aea14b, type: 3}
     UnlockedSound: {fileID: 0}
     ProgressTarget: 5
     ProgressCurrent: 0
@@ -105,8 +93,8 @@ MonoBehaviour:
     Title: Noob
     Description: You experienced your first game over lol
     Points: 0
-    LockedImage: {fileID: 0}
-    UnlockedImage: {fileID: 0}
+    LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    UnlockedImage: {fileID: 21300008, guid: fa6d364a5a0575245859952062aea14b, type: 3}
     UnlockedSound: {fileID: 0}
     ProgressTarget: 1
     ProgressCurrent: 0
@@ -129,8 +117,8 @@ MonoBehaviour:
     Title: I fought the boss, and I lost
     Description: You got killed by a boss
     Points: 0
-    LockedImage: {fileID: 0}
-    UnlockedImage: {fileID: 0}
+    LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    UnlockedImage: {fileID: 21300008, guid: fa6d364a5a0575245859952062aea14b, type: 3}
     UnlockedSound: {fileID: 0}
     ProgressTarget: 1
     ProgressCurrent: 0
@@ -141,8 +129,8 @@ MonoBehaviour:
     Title: I fought the boss, and I won
     Description: You killed your first boss, yay!
     Points: 0
-    LockedImage: {fileID: 0}
-    UnlockedImage: {fileID: 0}
+    LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    UnlockedImage: {fileID: 21300002, guid: fa6d364a5a0575245859952062aea14b, type: 3}
     UnlockedSound: {fileID: 0}
     ProgressTarget: 1
     ProgressCurrent: 0
@@ -153,22 +141,10 @@ MonoBehaviour:
     Title: New addiction?
     Description: Your time played exceeds 1 minute
     Points: 0
-    LockedImage: {fileID: 0}
-    UnlockedImage: {fileID: 0}
+    LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    UnlockedImage: {fileID: 21300000, guid: fa6d364a5a0575245859952062aea14b, type: 3}
     UnlockedSound: {fileID: 0}
     ProgressTarget: 60
-    ProgressCurrent: 0
-  - AchievementID: ==SIMPLE-ACHIEVEMENTS==
-    AchievementType: 0
-    HiddenAchievement: 0
-    UnlockedStatus: 0
-    Title: none
-    Description: ---
-    Points: 0
-    LockedImage: {fileID: 0}
-    UnlockedImage: {fileID: 0}
-    UnlockedSound: {fileID: 0}
-    ProgressTarget: 0
     ProgressCurrent: 0
   - AchievementID: SpeedRun_Lvl1
     AchievementType: 0
@@ -177,8 +153,8 @@ MonoBehaviour:
     Title: Speedrunning is EZ
     Description: You finished the first level in less than X minutes
     Points: 0
-    LockedImage: {fileID: 0}
-    UnlockedImage: {fileID: 0}
+    LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    UnlockedImage: {fileID: 21300000, guid: fa6d364a5a0575245859952062aea14b, type: 3}
     UnlockedSound: {fileID: 0}
     ProgressTarget: 0
     ProgressCurrent: 0
@@ -189,8 +165,8 @@ MonoBehaviour:
     Title: I just got a raise!
     Description: Unlock your first power up
     Points: 0
-    LockedImage: {fileID: 0}
-    UnlockedImage: {fileID: 0}
+    LockedImage: {fileID: 21300010, guid: fa6d364a5a0575245859952062aea14b, type: 3}
+    UnlockedImage: {fileID: 21300000, guid: fa6d364a5a0575245859952062aea14b, type: 3}
     UnlockedSound: {fileID: 0}
     ProgressTarget: 0
     ProgressCurrent: 0

@@ -10,6 +10,9 @@ namespace Game
     /// </summary>
     public class RHGameManager : GameManager, MMEventListener<EnemyDeathEvent>
     {
+        public new static RHGameManager Instance => (RHGameManager)GameManager.Instance;
+        public new static RHGameManager Current => (RHGameManager)GameManager.Current;
+
         // temporary until we are keeping track of the game progress
         private bool _hasDoneMainQuest;
         public bool HasDoneMainQuest() => _hasDoneMainQuest;
@@ -42,7 +45,7 @@ namespace Game
             // the quest is done
             if (!CurrentQuest.QuestCompleted()) return;
             // Give reward if we got one
-            CurrentQuest.Data.Reward()?.Give(LevelManager.Instance.Players[0]);
+            CurrentQuest.Data.Reward()?.Give(RHLevelManager.GetPlayer);
 
             // clear
             CurrentQuest = null;

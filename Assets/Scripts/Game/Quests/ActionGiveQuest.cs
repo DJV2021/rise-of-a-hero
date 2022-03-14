@@ -19,7 +19,7 @@ namespace Game.Quests
         private void Awake()
         {
             _buttonActivated = GetComponent<ButtonActivated>();
-            var gameManager = (RHGameManager)GameManager.Instance;
+            var gameManager = RHGameManager.Instance;
 
             // if we are doing a quest or we already did the main quest and we don't have any more quests
             if (gameManager.HasQuest() || gameManager.HasDoneMainQuest() && nextQuest == null)
@@ -30,7 +30,7 @@ namespace Game.Quests
 
         public void SetCurrentQuest()
         {
-            var gameManager = (RHGameManager) GameManager.Instance;
+            var gameManager = RHGameManager.Instance;
             if (gameManager.HasQuest()) // should not occur
             {
                 _buttonActivated.Activable = false;

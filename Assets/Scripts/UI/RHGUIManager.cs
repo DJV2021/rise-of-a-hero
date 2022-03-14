@@ -26,7 +26,8 @@ namespace UI
         private void RefreshQuest()
         {
             if (currentQuestLabel == null) return;
-            var quest = ((RHGameManager)GameManager.Current)?.CurrentQuest;
+            var gameManager = RHGameManager.Current;
+            var quest = gameManager == null ? null : gameManager.CurrentQuest;
             currentQuestLabel.text = quest != null ? quest.GetDisplayName() : "";
             var reward = quest?.Data.Reward();
             currentQuestRewardLabel.text = reward != null ? reward.GetDisplayName() : "";

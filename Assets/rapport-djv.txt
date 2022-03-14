@@ -52,6 +52,8 @@ Le mise en pause du jeu est déclenchée par nos soins, mais est réalisée en i
 
 On a ajouté une scène de GameOver, mais c'est principalement de l'UI. Elle est chargée par le GameManager de Corgi.
 
+On a fait le level design, et personnellement créé certains éléments de décor comme les panneaux et les portes, ainsi qu'entièrement écrit les scripts permettant d'ouvrir les portes. Notez qu'on a utilisé des rule tiles et des rule override tiles pour rendre le level design plus efficace.
+
 Le plus gros travail de l'équipe a été d'intégrer des graphismes au Corgi Engine, et de le faire marcher :(.
 
 Faire en sorte que le jeu marche avec les services google play. En gros, lancer le jeu, connecte le joueur a google play,

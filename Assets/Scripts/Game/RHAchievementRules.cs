@@ -32,7 +32,7 @@ namespace Game
 
 		public override void OnMMEvent(MMCharacterEvent characterEvent)
 		{
-			
+			base.OnMMEvent(characterEvent);
 		}
 
 		public override void OnMMEvent(CorgiEngineEvent corgiEngineEvent)
@@ -62,6 +62,7 @@ namespace Game
 
 		public void OnMMEvent(QuestEvent questEvent)
 		{
+			if (questEvent.Method != QuestMethods.Completed) return;
 			AddMultiProgress("FinishQuests_");
 			MMAchievementManager.SaveAchievements();
 		}
@@ -74,9 +75,11 @@ namespace Game
 					AddMultiProgress("WinToBoss_");
 					break;
 				case RHEventTypes.PlayerDeathFromBoss:
+					// TODO: assign the trigger
 					AddMultiProgress("DieFromBoss_");
 					break;
 				case RHEventTypes.PlayedForOneSec:
+					// TODO: assign the trigger
 					AddMultiProgress("TimePlayed_");
 					break;
 			}
@@ -88,9 +91,14 @@ namespace Game
 			switch (eventType.PowerUpEventType)
 			{
 				case PowerUpEventTypes.Dash:
-				case PowerUpEventTypes.Glide:
-				case PowerUpEventTypes.JetPack:
+					// TODO: assign the trigger
 					MMAchievementManager.UnlockAchievement("UnlockPower_"+eventType.Name);
+					break;
+				case PowerUpEventTypes.Glide:
+					// TODO: add this to the game as reward and assign the trigger
+					break;
+				case PowerUpEventTypes.JetPack:
+					// TODO: add this to the game as reward and assign the trigger
 					break;
 			}
 		}

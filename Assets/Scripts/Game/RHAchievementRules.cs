@@ -11,7 +11,8 @@ namespace Game
 	/// It extends the base class MMAchievementRules
 	/// It listens for different event types
 	/// </summary>
-	public class RHAchievementRules : AchievementRules, MMEventListener<EnemyDeathEvent>
+	public class RHAchievementRules : AchievementRules, MMEventListener<EnemyDeathEvent>, 
+		MMEventListener<QuestEvent>, MMEventListener<RHEvent>
 	{
 		/// <summary>
 		/// When we catch an MMGameEvent, we do stuff based on its name
@@ -36,19 +37,16 @@ namespace Game
 
 		public override void OnMMEvent(CorgiEngineEvent corgiEngineEvent)
 		{
-			bool newAchTrigger = false;
 			switch (corgiEngineEvent.EventType)
 			{
 				case CorgiEngineEventTypes.GameOver:
-					newAchTrigger = true;
-					MMAchievementManager.AddProgress("Gameover_1", 1);
+					AddMultiProgress("Gameover_");
 					break;				
 				case CorgiEngineEventTypes.PlayerDeath:
-					newAchTrigger = true;
 					AddMultiProgress("Die_");
 					break;
 			}
-			if(newAchTrigger) MMAchievementManager.SaveAchievements();
+			MMAchievementManager.SaveAchievements();
 		}
 
 		public override void OnMMEvent(PickableItemEvent pickableItemEvent)
@@ -59,7 +57,32 @@ namespace Game
 		public void OnMMEvent(EnemyDeathEvent enemyDeathEvent)
 		{
 			AddMultiProgress("KillMonsters_");
+			MMAchievementManager.SaveAchievements();
 		}
+
+		public void OnMMEvent(QuestEvent questEvent)
+		{
+			AddMultiProgress("FinishQuests_");
+			MMAchievementManager.SaveAchievements();
+		}
+		
+		public void OnMMEvent(RHEvent rhEvent)
+		{
+			switch (rhEvent.EventType)
+			{
+				case RHEventTypes.BossDeath:
+					AddMultiProgress("WinToBoss_");
+					break;
+				case RHEventTypes.PlayerDeathFromBoss:
+					AddMultiProgress("DieFromBoss_");
+					break;
+				case RHEventTypes.PlayedForOneSec:
+					AddMultiProgress("TimePlayed_");
+					break;
+			}
+			MMAchievementManager.SaveAchievements();
+		}
+		
 
 		public override void PrintCurrentStatus()
 		{
@@ -74,12 +97,12 @@ namespace Game
 			}	
 		}
 
-		private void AddMultiProgress(string idBeginning)
+		private void AddMultiProgress(string idBeginning, int newProgress = 1)
 		{
 			foreach(var achievement in AchievementList.Achievements)
 			{
 				if (achievement.AchievementID.StartsWith(idBeginning) && !achievement.UnlockedStatus)
-					MMAchievementManager.AddProgress(achievement.AchievementID, 1);
+					MMAchievementManager.AddProgress(achievement.AchievementID, newProgress);
 			}
 		}
 
@@ -87,12 +110,16 @@ namespace Game
 		{
 			base.OnEnable();
 			this.MMEventStartListening<EnemyDeathEvent>();
+			this.MMEventStartListening<QuestEvent>();
+			this.MMEventStartListening<RHEvent>();
 		}
 
 		protected override void OnDisable()
 		{
 			base.OnDisable();
 			this.MMEventStopListening<EnemyDeathEvent>();
+			this.MMEventStopListening<QuestEvent>();
+			this.MMEventStopListening<RHEvent>();
 		}
 	}
 }

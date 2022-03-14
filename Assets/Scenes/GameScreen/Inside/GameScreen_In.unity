@@ -194,7 +194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 240631094}
   m_Layer: 0
-  m_Name: ------------Managers------------
+  m_Name: '------------Managers------------'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -528,6 +528,52 @@ MonoBehaviour:
     data: {fileID: 11400000, guid: 559c62b58ce21a048857774eca0e1da3, type: 2}
   nextQuest:
     data: {fileID: 11400000, guid: 57d4ee44f38cf3d488bd5b6b436687a8, type: 2}
+--- !u!1 &453444687
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 453444689}
+  - component: {fileID: 453444688}
+  m_Layer: 0
+  m_Name: BackgroundMusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &453444688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453444687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50dfe57b03522e148b2bd9f2b37504bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationTime: 0
+  SoundClip: {fileID: 8300000, guid: a6c67f692fa1bf242882bd105357d4c2, type: 3}
+  Loop: 1
+--- !u!4 &453444689
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453444687}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 34.92343, y: 7.922845, z: -35.94997}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &570350939
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,7 +584,7 @@ GameObject:
   m_Component:
   - component: {fileID: 570350940}
   m_Layer: 0
-  m_Name: ------------UI------------
+  m_Name: '------------UI------------'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2300,7 +2346,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1370558639}
   m_Layer: 0
-  m_Name: ------------Level------------
+  m_Name: '------------Level------------'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4443,6 +4489,12 @@ PrefabInstance:
       propertyPath: PlayerPrefabs.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1895556126346536545, guid: 09ba2fefdf17a834dbbcd212a75d93c0,
+        type: 3}
+      propertyPath: PlayerPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 114473069959786316, guid: 6ee84b0bb4955b640b3f94640d50570d,
+        type: 3}
     - target: {fileID: 4142910943716067696, guid: 09ba2fefdf17a834dbbcd212a75d93c0,
         type: 3}
       propertyPath: m_Name

@@ -1,3 +1,4 @@
+using GooglePlayGames;
 using MoreMountains.Tools;
 using UnityEngine;
 
@@ -17,6 +18,13 @@ namespace Game
         public void ShowAchievements()
         {
             Social.ShowAchievementsUI();
+        }
+
+        public void GiveWelcome()
+        {
+            ((PlayGamesPlatform) Social.Active).UnlockAchievement(
+                GPGSIds.achievement_welcome,
+                success => {});
         }
     }
 }

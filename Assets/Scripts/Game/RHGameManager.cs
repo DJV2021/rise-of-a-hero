@@ -2,6 +2,8 @@
 using Game.Quests;
 using MoreMountains.CorgiEngine;
 using MoreMountains.Tools;
+using UnityEngine;
+using UnityEngine.Advertisements;
 
 namespace Game
 {
@@ -16,7 +18,22 @@ namespace Game
         // temporary until we are keeping track of the game progress
         private bool _hasDoneMainQuest;
         public bool HasDoneMainQuest() => _hasDoneMainQuest;
+
+        // current quest
+        public Quest CurrentQuest { get; private set; }
+        public bool HasQuest() => CurrentQuest != null;
         
+        [Header("Ads")]
+        public string gameId;
+        public bool testMode;
+        
+        protected override void Awake()
+        {
+            base.Awake();
+            Advertisement.Initialize(gameId, testMode);
+            Advertisement.Load("Rewarded_Android");
+        }
+
         //  we can only have one quest at a time
         public void SetQuest(Quest quest)
         {
@@ -29,9 +46,6 @@ namespace Game
             // Yeah, we only have one quest in the Main Quest
             _hasDoneMainQuest = true;
         }
-        
-        public Quest CurrentQuest { get; private set; }
-        public bool HasQuest() => CurrentQuest != null;
 
         public void OnEnemyKilled()
         {
@@ -71,6 +85,13 @@ namespace Game
         {
             base.OnDisable();
             this.MMEventStopListening<EnemyDeathEvent> ();
+        }
+
+        public void ResetQuest()
+        {
+            // no
+            _hasDoneMainQuest = false;
+            CurrentQuest = null;
         }
     }
 }

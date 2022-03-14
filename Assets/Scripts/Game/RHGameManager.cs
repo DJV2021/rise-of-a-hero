@@ -42,9 +42,6 @@ namespace Game
 
             // fire event
             QuestEvent.Trigger(CurrentQuest, QuestMethods.Started);
-            
-            // Yeah, we only have one quest in the Main Quest
-            _hasDoneMainQuest = true;
         }
 
         public void OnEnemyKilled()
@@ -57,7 +54,9 @@ namespace Game
             QuestEvent.Trigger(CurrentQuest, QuestMethods.Updated);
 
             // the quest is done
-            if (!CurrentQuest.QuestCompleted()) return;
+            if (!CurrentQuest.QuestCompleted()) return;            
+            // Yeah, we only have one quest in the Main Quest
+            _hasDoneMainQuest = true;
             // Give reward if we got one
             CurrentQuest.Data.Reward()?.Give(RHLevelManager.GetPlayer);
 

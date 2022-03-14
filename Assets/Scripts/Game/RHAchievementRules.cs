@@ -12,7 +12,7 @@ namespace Game
 	/// It listens for different event types
 	/// </summary>
 	public class RHAchievementRules : AchievementRules, MMEventListener<EnemyDeathEvent>, 
-		MMEventListener<QuestEvent>, MMEventListener<RHEvent>
+		MMEventListener<QuestEvent>, MMEventListener<RHEvent>, MMEventListener<PowerUpEvent>
 	{
 		/// <summary>
 		/// When we catch an MMGameEvent, we do stuff based on its name
@@ -25,14 +25,9 @@ namespace Game
 
 		}
 
-		private void Start()
-		{
-			Awake();
-		}
-
 		public override void OnMMEvent(MMCharacterEvent characterEvent)
 		{
-			
+			base.OnMMEvent(characterEvent);
 		}
 
 		public override void OnMMEvent(CorgiEngineEvent corgiEngineEvent)
@@ -40,7 +35,7 @@ namespace Game
 			switch (corgiEngineEvent.EventType)
 			{
 				case CorgiEngineEventTypes.GameOver:
-					AddMultiProgress("Gameover_");
+					AddMultiProgress("GameOver_");
 					break;				
 				case CorgiEngineEventTypes.PlayerDeath:
 					AddMultiProgress("Die_");
@@ -62,6 +57,7 @@ namespace Game
 
 		public void OnMMEvent(QuestEvent questEvent)
 		{
+			if (questEvent.Method != QuestMethods.Completed) return;
 			AddMultiProgress("FinishQuests_");
 			MMAchievementManager.SaveAchievements();
 		}
@@ -74,15 +70,33 @@ namespace Game
 					AddMultiProgress("WinToBoss_");
 					break;
 				case RHEventTypes.PlayerDeathFromBoss:
+					// TODO: assign the trigger
 					AddMultiProgress("DieFromBoss_");
 					break;
 				case RHEventTypes.PlayedForOneSec:
+					// TODO: assign the trigger
 					AddMultiProgress("TimePlayed_");
 					break;
 			}
 			MMAchievementManager.SaveAchievements();
 		}
 		
+		public void OnMMEvent(PowerUpEvent eventType)
+		{
+			switch (eventType.PowerUpEventType)
+			{
+				case PowerUpEventTypes.Dash:
+					MMAchievementManager.UnlockAchievement("UnlockPower_"+eventType.Name);
+					break;
+				case PowerUpEventTypes.Glide:
+					// TODO: add this to the game as reward
+					break;
+				case PowerUpEventTypes.JetPack:
+					// TODO: add this to the game as reward
+					break;
+			}
+			MMAchievementManager.SaveAchievements();
+		}
 
 		public override void PrintCurrentStatus()
 		{
@@ -108,18 +122,22 @@ namespace Game
 
 		protected override void OnEnable()
 		{
+			Debug.Log("rhachievement onenable");
 			base.OnEnable();
 			this.MMEventStartListening<EnemyDeathEvent>();
 			this.MMEventStartListening<QuestEvent>();
 			this.MMEventStartListening<RHEvent>();
+			this.MMEventStartListening<PowerUpEvent>();
 		}
 
 		protected override void OnDisable()
 		{
+			Debug.Log("rhachievement ondisable");
 			base.OnDisable();
 			this.MMEventStopListening<EnemyDeathEvent>();
 			this.MMEventStopListening<QuestEvent>();
 			this.MMEventStopListening<RHEvent>();
+			this.MMEventStopListening<PowerUpEvent>();
 		}
 	}
 }

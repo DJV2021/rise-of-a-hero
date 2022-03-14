@@ -19,5 +19,13 @@ namespace Game.Events
             _e.EventType = eventType;
             MMEventManager.TriggerEvent(_e);
         }
+        
+        // made to be converted to a delegate in BossDeathTracker
+        public static void TriggerBossDeath()
+        {
+            _e.EventType = RHEventTypes.BossDeath;
+            MMEventManager.TriggerEvent(_e);
+            EnemyDeathEvent.Trigger();
+        }
     }
 }

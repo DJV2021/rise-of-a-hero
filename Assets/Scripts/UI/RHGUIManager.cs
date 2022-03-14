@@ -37,12 +37,14 @@ namespace UI
         {
             base.OnEnable();
             this.MMEventStartListening<QuestEvent> ();
+            Debug.Log("rhguimanager onenable");
         }
 
         protected override void OnDisable()
         {
             base.OnDisable();
             this.MMEventStopListening<QuestEvent> ();
+            Debug.Log("rhguimanager ondisable");
         }
 
         public void OnMMEvent(QuestEvent eventType)

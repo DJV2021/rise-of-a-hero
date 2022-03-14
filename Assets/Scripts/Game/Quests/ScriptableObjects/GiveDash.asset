@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ability: {fileID: 114339136294938960, guid: c029eb05956a8c64b9c7130e36520100, type: 3}
   displayName: Dash
+  eventType: 0
+  eventName: Dash

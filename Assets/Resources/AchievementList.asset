@@ -98,7 +98,7 @@ MonoBehaviour:
     UnlockedSound: {fileID: 0}
     ProgressTarget: 5
     ProgressCurrent: 0
-  - AchievementID: Gameover_1
+  - AchievementID: GameOver_1
     AchievementType: 1
     HiddenAchievement: 0
     UnlockedStatus: 0
@@ -146,18 +146,6 @@ MonoBehaviour:
     UnlockedSound: {fileID: 0}
     ProgressTarget: 1
     ProgressCurrent: 0
-  - AchievementID: UnlockPower_Dash
-    AchievementType: 1
-    HiddenAchievement: 0
-    UnlockedStatus: 0
-    Title: I just got a raise!
-    Description: Unlock your first power up
-    Points: 0
-    LockedImage: {fileID: 0}
-    UnlockedImage: {fileID: 0}
-    UnlockedSound: {fileID: 0}
-    ProgressTarget: 1
-    ProgressCurrent: 0
   - AchievementID: TimePlayed_1min
     AchievementType: 1
     HiddenAchievement: 0
@@ -188,6 +176,18 @@ MonoBehaviour:
     UnlockedStatus: 0
     Title: Speedrunning is EZ
     Description: You finished the first level in less than X minutes
+    Points: 0
+    LockedImage: {fileID: 0}
+    UnlockedImage: {fileID: 0}
+    UnlockedSound: {fileID: 0}
+    ProgressTarget: 0
+    ProgressCurrent: 0
+  - AchievementID: UnlockPower_Dash
+    AchievementType: 0
+    HiddenAchievement: 0
+    UnlockedStatus: 0
+    Title: I just got a raise!
+    Description: Unlock your first power up
     Points: 0
     LockedImage: {fileID: 0}
     UnlockedImage: {fileID: 0}

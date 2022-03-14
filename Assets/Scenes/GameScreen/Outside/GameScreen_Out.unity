@@ -920,7 +920,7 @@ MonoBehaviour:
   ButtonPromptPrefab: {fileID: 114235008137252218, guid: bb1fc0f1f16f31248b9b4d80aa795609,
     type: 3}
   ButtonPromptText: B
-  ButtonPromptColor: {r: 0.4862745, g: 0.9882353, b: 0, a: 1}
+  ButtonPromptColor: {r: 0.9150943, g: 0.21615474, b: 0.13294764, a: 1}
   ButtonPromptTextColor: {r: 1, g: 1, b: 1, a: 1}
   AlwaysShowPrompt: 0
   ShowPromptWhenColliding: 1

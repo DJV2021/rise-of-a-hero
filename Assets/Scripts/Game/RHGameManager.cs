@@ -2,6 +2,8 @@
 using Game.Quests;
 using MoreMountains.CorgiEngine;
 using MoreMountains.Tools;
+using UnityEngine;
+using UnityEngine.Advertisements;
 
 namespace Game
 {
@@ -16,7 +18,18 @@ namespace Game
         // temporary until we are keeping track of the game progress
         private bool _hasDoneMainQuest;
         public bool HasDoneMainQuest() => _hasDoneMainQuest;
+
+        [Header("Ads")]
+        public string gameId;
+        public bool testMode;
         
+        protected override void Awake()
+        {
+            base.Awake();
+            Advertisement.Initialize(gameId, testMode);
+            Advertisement.Load("Rewarded_Android");
+        }
+
         //  we can only have one quest at a time
         public void SetQuest(Quest quest)
         {

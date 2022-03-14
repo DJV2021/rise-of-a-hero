@@ -81,11 +81,6 @@ namespace Game
 				if (achievement.AchievementID.StartsWith(idBeginning) && !achievement.UnlockedStatus)
 				{
 					MMAchievementManager.AddProgress(achievement.AchievementID, 1);
-					if (achievement.UnlockedStatus)
-					{
-						Debug.Log("Got this achievement");
-						GPSManager.Instance.GiveWelcome();
-					}
 				}
 			}
 		}

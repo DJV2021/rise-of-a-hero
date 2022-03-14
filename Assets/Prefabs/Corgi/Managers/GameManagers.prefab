@@ -55,6 +55,8 @@ MonoBehaviour:
   ResetPersistentCharacterOnGameOver: 1
   ResetStoredCharacterOnGameOver: 1
   GameOverScene: GameOver
+  gameId: 4614283
+  testMode: 1
 --- !u!114 &57519127960358006
 MonoBehaviour:
   m_ObjectHideFlags: 0

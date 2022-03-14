@@ -1554,3 +1554,5 @@ MonoBehaviour:
   ProgressBarSpeed: 2
   ExitFadeDuration: 0.2
   LoadCompleteDelay: 0.5
+  gameId: 4614283
+  testMode: 1

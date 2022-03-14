@@ -9,7 +9,7 @@ namespace Game
         // Start is called before the first frame update
         public void Start()
         {
-            GooglePlayGames.PlayGamesPlatform.Activate();
+            PlayGamesPlatform.Activate();
         
             if (!Social.localUser.authenticated) 
                 Social.localUser.Authenticate(success => { });
@@ -18,13 +18,6 @@ namespace Game
         public void ShowAchievements()
         {
             Social.ShowAchievementsUI();
-        }
-
-        public void GiveWelcome()
-        {
-            ((PlayGamesPlatform) Social.Active).UnlockAchievement(
-                GPGSIds.achievement_welcome,
-                success => {});
         }
     }
 }

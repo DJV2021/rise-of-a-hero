@@ -91,16 +91,16 @@ namespace Game
 			switch (eventType.PowerUpEventType)
 			{
 				case PowerUpEventTypes.Dash:
-					// TODO: assign the trigger
 					MMAchievementManager.UnlockAchievement("UnlockPower_"+eventType.Name);
 					break;
 				case PowerUpEventTypes.Glide:
-					// TODO: add this to the game as reward and assign the trigger
+					// TODO: add this to the game as reward
 					break;
 				case PowerUpEventTypes.JetPack:
-					// TODO: add this to the game as reward and assign the trigger
+					// TODO: add this to the game as reward
 					break;
 			}
+			MMAchievementManager.SaveAchievements();
 		}
 
 		public override void PrintCurrentStatus()

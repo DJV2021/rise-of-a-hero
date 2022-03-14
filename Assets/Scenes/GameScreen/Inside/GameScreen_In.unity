@@ -194,7 +194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 240631094}
   m_Layer: 0
-  m_Name: '------------Managers------------'
+  m_Name: ------------Managers------------
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -536,7 +536,7 @@ GameObject:
   m_Component:
   - component: {fileID: 570350940}
   m_Layer: 0
-  m_Name: '------------UI------------'
+  m_Name: ------------UI------------
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2298,7 +2298,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1370558639}
   m_Layer: 0
-  m_Name: '------------Level------------'
+  m_Name: ------------Level------------
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4441,6 +4441,12 @@ PrefabInstance:
       propertyPath: PlayerPrefabs.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1895556126346536545, guid: 09ba2fefdf17a834dbbcd212a75d93c0,
+        type: 3}
+      propertyPath: PlayerPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 114473069959786316, guid: c029eb05956a8c64b9c7130e36520100,
+        type: 3}
     - target: {fileID: 4142910943716067696, guid: 09ba2fefdf17a834dbbcd212a75d93c0,
         type: 3}
       propertyPath: m_Name

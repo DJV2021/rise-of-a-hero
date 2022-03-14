@@ -19,6 +19,10 @@ namespace Game
         private bool _hasDoneMainQuest;
         public bool HasDoneMainQuest() => _hasDoneMainQuest;
 
+        // current quest
+        public Quest CurrentQuest { get; private set; }
+        public bool HasQuest() => CurrentQuest != null;
+        
         [Header("Ads")]
         public string gameId;
         public bool testMode;
@@ -42,9 +46,6 @@ namespace Game
             // Yeah, we only have one quest in the Main Quest
             _hasDoneMainQuest = true;
         }
-        
-        public Quest CurrentQuest { get; private set; }
-        public bool HasQuest() => CurrentQuest != null;
 
         public void OnEnemyKilled()
         {
@@ -84,6 +85,13 @@ namespace Game
         {
             base.OnDisable();
             this.MMEventStopListening<EnemyDeathEvent> ();
+        }
+
+        public void ResetQuest()
+        {
+            // no
+            _hasDoneMainQuest = false;
+            CurrentQuest = null;
         }
     }
 }

@@ -12,7 +12,7 @@ namespace Game
 	/// It listens for different event types
 	/// </summary>
 	public class RHAchievementRules : AchievementRules, MMEventListener<EnemyDeathEvent>, 
-		MMEventListener<QuestEvent>, MMEventListener<RHEvent>
+		MMEventListener<QuestEvent>, MMEventListener<RHEvent>, MMEventListener<PowerUpEvent>
 	{
 		/// <summary>
 		/// When we catch an MMGameEvent, we do stuff based on its name
@@ -83,6 +83,17 @@ namespace Game
 			MMAchievementManager.SaveAchievements();
 		}
 		
+		public void OnMMEvent(PowerUpEvent eventType)
+		{
+			switch (eventType.PowerUpEventType)
+			{
+				case PowerUpEventTypes.Dash:
+				case PowerUpEventTypes.Glide:
+				case PowerUpEventTypes.JetPack:
+					MMAchievementManager.UnlockAchievement("UnlockPower_"+eventType.Name);
+					break;
+			}
+		}
 
 		public override void PrintCurrentStatus()
 		{
@@ -112,6 +123,7 @@ namespace Game
 			this.MMEventStartListening<EnemyDeathEvent>();
 			this.MMEventStartListening<QuestEvent>();
 			this.MMEventStartListening<RHEvent>();
+			this.MMEventStartListening<PowerUpEvent>();
 		}
 
 		protected override void OnDisable()
@@ -120,6 +132,8 @@ namespace Game
 			this.MMEventStopListening<EnemyDeathEvent>();
 			this.MMEventStopListening<QuestEvent>();
 			this.MMEventStopListening<RHEvent>();
+			this.MMEventStopListening<PowerUpEvent>();
 		}
+
 	}
 }

@@ -1,0 +1,76 @@
+﻿## StartScreen
+
+Il existe déjà un
+
+- composant "toogle"
+- composant qui permet de changer de scène
+- composant qui ouvre un "popup"
+
+donc nous avons fait l'UI, et placé des composants pour rendre ça vivant.
+
+## Loading Screen
+
+Uniquement l'interface et le lancement aléatoire d'une PUB.
+
+Le reste (loader / progression) est fait par Corgi.
+
+## Game
+
+Nous avons conçu le player, et l'avons animé (toutes les animations, il y en a BEAUCOUP: idle, climb, dash, glide, jump, attack, dead, walk, Crouch, Crawl, particules du Dash mais PAS le dash) ont été faites par notre groupe, le player ayant vocation à devenir l'icône du jeu). Les composants tels que le dash, jump, attaque, etc. sont déjà dans le Corgi, mais on charge nos animations, et nous les avons configurés.
+
+Nous avons créé des règles pour les succès. Le reste (affichage, et sauvegarde) est géré par le Corgi.
+
+Nous avons conçu les niveaux, et placé les bons layer pour chaque tilemap afin que les "collisions"
+(piques) soient gérés par le corgi engine.
+
+Nous avons ajouté un système de quêtes : les devs créent des quêtes avec optionnelement des rewards. Actuellement, le jeu ne marche que pour une quête principale et une quête générique (i.e. seulement deux quêtes). Ceci comprends
+   - l'affichage
+   - le rechargement de l'affichage après changement de scène
+   - le rechargement des récompenses obtenus après changement de scène
+   - la mise à jour de l'affichage suite à la progression d'une quête (i.e. 15 kills => 14 kills)
+   - la distribution des rewards
+   - empêcher le joueur de re-prendre une quête (sans l'avoir finie)
+   
+Note: le rechargement est lié à la sauvegarde, elle n'est pas disponible (cf les ratés) donc ce n'est pas complétement
+générique, alors que tout le reste est DATA-DRIVEN :D!
+
+Nous avons mis en place un système d'événements. Tous les échangements entre les classes passent (certains sont en transition car on a refactor/supprimé pas mal de code mais pas tout) par un système observer-obversable. Le système est fourni par le Corgi, donc on a les listeners qui se déclarent au EventManager comme écoutant un certain type d'event. Notre part a été de faire en sorte qu'un maximum d'events du jeu (player death, game over, ennemy killed, quest started, quest updated, quest completed, boss killed, etc.) soient envoyés au EventManager qui va les dispatcher aux listeners. Ceci nous permet de mettre à jour les achievements, la vue, ou encore la sauvegarde (cf. les ratés).
+
+Nous avons configuré les IAs, mais ne les avons pas codés. Nous avons passé beaucoup de temps à simplement les faire marcher,
+car il y avait des problèmes (IA qui se déplace dans l'air pour aucune raison => collider OK, position OK), et
+IA qui reste sur place en essayant d'aller de droite à gauche en même temps. Nous avons pris trop de temps sur ça et n'avons
+donc pas pu faire en sorte de faire des IAs plus intelligentes (note: en 4h le bug n'a pas été résolu donc nous
+avons abandonné).
+
+En ce qui concerne le fait qu'on peut intéragir avec des objets, ceci ne vient pas de nous. Nous avons seulement associé
+un script existant, et fait en sorte qu'il nous téléporte vers un autre niveau. Ou alors qu'il nous donne une quête. Nous
+avons cependant changé la touche (A -> B) et sa couleur (vert -> rouge, car B est en rouge). Nous avons également supprimé
+les éléments d'UI non utilisés (touches Run/...) et changé les passage des événements input (b servait au Jetpack avant, 
+et a servait à Jump+use). On voulait idéalement avoir une icone pour chaque action, et un bouton par action.
+
+Le mise en pause du jeu est déclenchée par nos soins, mais est réalisée en interne par le Corgi engine.
+
+On a ajouté une scène de GameOver, mais c'est principalement de l'UI. Elle est chargée par le GameManager de Corgi.
+
+Le plus gros travail de l'équipe a été d'intégrer des graphismes au Corgi Engine, et de le faire marcher :(.
+
+Faire en sorte que le jeu marche avec les services google play. En gros, lancer le jeu, connecte le joueur a google play,
+puis il peut voir une fausse liste de succès. Cette liste n'a pas été liée au jeu car nous n'avons pas eu assez de temps pour adapter le code qui marche avec le corgi.
+
+## Les ratés
+
+* Nous avons essayé de faire des zones avec une caméra différente, mais il y avait des problèmes aux limites
+de la map, le code a été retiré.
+* Nous avons essayé de sauvegarde le jeu, mais le code n'a pas été testé/terminé, et n'est pas dans le build.
+* Le Corgi: 20-40 minutes à installer, 30-40 minutes si vous avez le malheur d'avoir lancé le projet en mode PC au lieu de Android.
+* Unity?: deux membres peuvent avoir le même projet, les mêmes fichiers, et voir deux choses différentes: car Unity parfois ne reload pas toujours correctement après un pull=>merge, il faut fermer et ré-ouvrir unity (ou modifier un script), sauf que ne pas le savoir à donné lieu à des heures de rage contre l'ordinateur.
+* Le Corgi: aucune documentation utile lorsqu'on veut s'écarter de ce que propose l'engine, ça prends longtemps à savoir
+comment ça marche (+ le code est vieux, et il y a des trucs chelous au niveau des hiérarchies).
+* Le playstore: nous a empêcher de build l'application d'un coup sans aucune raison => on a eu à ré-install
+* Le temps de build sur mobile :(
+
+## Bilan
+
+Il serait peut-être trés intéressant de re-coder le corgi engine, et de l'améliorer, maintenant qu'on sait enfin l'utiliser, parce qu'il y a une grande marge d'amélioration.
+
+Nous tenons à noter que nous avons fait et testé beaucoup de choses nouvelles (pubs, google play, corgi, android => unity remote / organisation / cloud build), et que cela demande d'aller apprendre et lire de nombreux tutoriels. Ce qui est tendu en 3 séances.

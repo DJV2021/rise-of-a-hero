@@ -49,3 +49,15 @@
   - You may change the compression (ex: none)
   - Apply
   - If this is a set, open the sprite editor and split the texture accordingly
+
+## Problems to build
+
+You may have to remove
+
+- ExternalDependencyManager
+- GooglePlayGames
+- Remove the code in GPSManager (if you're dropping support for GooglePlay)
+- Remove the keystore (if you're dropping support for GooglePlay)
+- Add the plugin again
+- Go to Assets > External Dependency Manager > Android Resolver > Force Reload
+- Curse :angery:

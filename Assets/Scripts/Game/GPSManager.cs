@@ -10,7 +10,7 @@ namespace Game
         public void Start()
         {
             PlayGamesPlatform.Activate();
-        
+
             if (!Social.localUser.authenticated) 
                 Social.localUser.Authenticate(success => { });
         }

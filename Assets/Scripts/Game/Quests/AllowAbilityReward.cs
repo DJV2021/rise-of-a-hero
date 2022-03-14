@@ -12,6 +12,11 @@ namespace Game.Quests
         [SerializeField] private CharacterAbility ability;
         [SerializeField] private string displayName;
 
+        public void SetAbility(CharacterAbility newAbility)
+        {
+            ability = newAbility;
+        }
+
         public override string GetDisplayName()
         {
             return $"Skill [{displayName}]";

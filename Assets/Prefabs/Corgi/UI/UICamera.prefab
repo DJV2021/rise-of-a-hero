@@ -2942,8 +2942,8 @@ GameObject:
   - component: {fileID: 6623752186428778005}
   - component: {fileID: 6441774127590809695}
   - component: {fileID: 6621008987222742035}
-  - component: {fileID: 6621022222512717005}
   - component: {fileID: 6624075130009290407}
+  - component: {fileID: 1819115264751448391}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -3035,8 +3035,8 @@ MonoBehaviour:
   ButtonPressedFirstTime:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6621022222512717005}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 1819115264751448391}
+        m_TargetAssemblyTypeName: RHLevelSelector, Assembly-CSharp
         m_MethodName: GoToLevel
         m_Mode: 1
         m_Arguments:
@@ -3097,21 +3097,6 @@ MonoBehaviour:
   DisabledAnimationParameterName: Disabled
   PressedAnimationParameterName: Pressed
   MouseMode: 1
---- !u!114 &6621022222512717005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6520847704553000883}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59d042072253d11428147ba0d074fa39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LevelName: StartScreen
-  Fade: 1
-  Save: 0
 --- !u!114 &6624075130009290407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3153,6 +3138,21 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 6623752186428778005}
+--- !u!114 &1819115264751448391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6520847704553000883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace6ac52cf654954085419b9c955bbcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelName: StartScreen
+  Fade: 1
+  Save: 1
 --- !u!1 &6520895936976027789
 GameObject:
   m_ObjectHideFlags: 0

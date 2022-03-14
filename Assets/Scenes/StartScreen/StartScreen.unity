@@ -192,6 +192,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c548b99d5a0ee9042890e4e5c933a554, type: 3}
+--- !u!1 &63704784 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 95932348075003526, guid: c548b99d5a0ee9042890e4e5c933a554,
+    type: 3}
+  m_PrefabInstance: {fileID: 63704783}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &63704785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63704784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 678d699dd0efa9c4d9a3c81e88547be2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &125868877
 GameObject:
   m_ObjectHideFlags: 0
@@ -1899,7 +1917,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1819082312}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab472eb51ad0e4535b858bc2f9fb9dc9, type: 3}
+  m_Script: {fileID: 11500000, guid: 586a20b4c91401b489176af0f09584e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   NextLevel: GameScreen_Out
@@ -2730,7 +2748,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1819082313}
-        m_TargetAssemblyTypeName: MoreMountains.CorgiEngine.StartScreen, MoreMountains.CorgiEngine
+        m_TargetAssemblyTypeName: RHStartScreen, Assembly-CSharp
         m_MethodName: ButtonPressed
         m_Mode: 1
         m_Arguments:

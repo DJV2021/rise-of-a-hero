@@ -2,6 +2,7 @@
 using Game.Quests;
 using MoreMountains.CorgiEngine;
 using MoreMountains.Tools;
+using UnityEngine;
 
 namespace Game
 {
@@ -28,6 +29,22 @@ namespace Game
             
             // Yeah, we only have one quest in the Main Quest
             _hasDoneMainQuest = true;
+        }
+
+        public void LoadQuest(bool hasDoneMainQuest, Quest currentQuest = null)
+        {
+            _hasDoneMainQuest = hasDoneMainQuest;
+            if(_hasDoneMainQuest)
+            {
+                AllowAbilityReward allower = new AllowAbilityReward();
+                allower.SetAbility(new CharacterDash());
+                allower.Give(RHLevelManager.GetPlayer);
+                Debug.Log("Loaded Main Quest Status");
+            }
+            if (currentQuest != null )
+            {
+                SetQuest(currentQuest);
+            }
         }
         
         public Quest CurrentQuest { get; private set; }
@@ -72,5 +89,11 @@ namespace Game
             base.OnDisable();
             this.MMEventStopListening<EnemyDeathEvent> ();
         }
+
+        protected override void Awake()
+		{
+			base.Awake ();
+			MMSaveLoadManager.saveLoadMethod = new MMSaveLoadManagerMethodJsonEncrypted();
+		}
     }
 }
